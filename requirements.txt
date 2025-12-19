@@ -1,0 +1,12 @@
+numpy
+scipy
+soundfile
+torch
+tqdm
+pyyaml
+pandas
+transformers
+matplotlib
+librosa
+google-genai
+panns-inference

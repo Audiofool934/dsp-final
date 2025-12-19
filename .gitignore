@@ -1,0 +1,62 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# Logs and temp files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.pid
+*.seed
+*.pid.lock
+tmp/
+temp/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+.env
+.env.*
+
+# Environment & secrets
+*.key
+*.pem
+*.crt
+*.secret
+
+# Compiled objects and binaries
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Dataset
+data/ESC-50-master/**
+!data/ESC-50-master/.gitkeep
+data/master.zip
+outputs/

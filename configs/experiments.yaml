@@ -1,0 +1,13 @@
+retrieval:
+  frame_lengths: [512, 1024, 2048]
+  hop_lengths: [256, 512, 1024]
+  n_mels: 40
+  n_mfcc: 13
+
+classification:
+  frame_length: 1024
+  hop_length: 512
+  n_mels: 40
+  epochs: 30
+  batch_size: 32
+  lr: 0.001
