@@ -50,7 +50,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--f-max", type=float, default=None)
     parser.add_argument("--folds", type=int, nargs="+", default=[1, 2, 3, 4, 5])
     parser.add_argument("--feature-cache", type=str, default="outputs/features")
-    parser.add_argument("--workers", type=int, default=0, help="Use process workers for parallel precompute")
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=0,
+        help="Use process workers (>1) for parallel precompute; 0/1 runs serially",
+    )
     return parser.parse_args()
 
 
@@ -88,7 +93,7 @@ def main() -> None:
     }
     for feature_type in args.feature_types:
         records = []
-        if args.workers and args.workers > 0:
+        if args.workers and args.workers > 1:
             with ProcessPoolExecutor(max_workers=args.workers) as executor:
                 futures = [
                     executor.submit(_compute_record, item, feature_type, cfg_params, args.feature_cache)

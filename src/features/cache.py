@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
+import uuid
 from dataclasses import asdict, is_dataclass
 from datetime import datetime
 from pathlib import Path
@@ -51,7 +53,13 @@ class FeatureCache:
             return None
         path = self.feature_path(item, feature_type, cfg)
         if path.exists():
-            return np.load(path)
+            try:
+                return np.load(path)
+            except (OSError, ValueError, EOFError):
+                try:
+                    path.unlink()
+                except OSError:
+                    pass
         return None
 
     def compute_feature(self, item, feature_type: str, cfg: MfccConfig) -> np.ndarray:
@@ -75,9 +83,15 @@ class FeatureCache:
             raise ValueError("get_feature requires MfccConfig for mfcc/log_mel")
         if self.enabled:
             path = self.feature_path(item, feature_type, cfg)
-            path.parent.mkdir(parents=True, exist_ok=True)
-            np.save(path, feat)
+            self.save_feature(path, feat)
         return feat
+
+    def save_feature(self, path: Path, feat: np.ndarray) -> None:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        tmp_path = path.with_suffix(path.suffix + f".{uuid.uuid4().hex}.tmp")
+        with tmp_path.open("wb") as f:
+            np.save(f, feat)
+        os.replace(tmp_path, path)
 
     def write_manifest(self, feature_type: str, cfg: MfccConfig | dict, records: Iterable[dict]) -> Path:
         digest, params = self.params_hash(feature_type, cfg)
@@ -136,6 +150,5 @@ def get_or_compute_embedding(
         return cached
     feat = compute_fn(item)
     path = cache.feature_path(item, feature_type, cfg)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    np.save(path, feat.astype(np.float32))
+    cache.save_feature(path, feat.astype(np.float32))
     return feat.astype(np.float32)

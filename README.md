@@ -17,6 +17,7 @@ This project implements FFT/STFT/MFCC from scratch and evaluates:
 - `scripts/tasks`: task-level experiment runners
 - `scripts/tools`: plotting and utilities
 - `scripts/README.md`: usage notes for scripts layout
+- `reports/experiment_plan.md`: full experiment runbook
 - `configs`: experiment settings
 - `reports`: report template
 - `outputs`: results and checkpoints
@@ -50,6 +51,8 @@ export PYTHONPATH=.
 4) CLAP zero-shot baseline: `python scripts/models/eval_clap_zeroshot.py`
 5) PANNs transfer baseline: `ESC j`
 6) Plot training history: `python scripts/tools/plot_history.py --history outputs/history/train_cnn.csv --output outputs/plots/cnn_history.png`
+
+Full runbook with all experiments: `reports/experiment_plan.md`
 
 ## Precompute DSP Features (Cache)
 Precompute MFCC and log-mel features and write a manifest:
