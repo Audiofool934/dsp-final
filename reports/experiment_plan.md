@@ -50,6 +50,13 @@ Expected outputs:
 - `outputs/models/cnn.pt`
 - `outputs/history/train_cnn.csv`
 
+## 4.1) Classification Hyperparameter Sweep (frame/hop)
+```
+python scripts/tasks/run_classification_grid.py --frame-lengths 512 1024 2048 --hop-lengths 256 512 1024
+Optional: use --epochs/--batch-size/--num-workers for a faster sweep (defaults in configs/experiments.yaml).
+```
+Expected output: `outputs/classification_grid.csv` (direct run) or `outputs/results/<run>/history/classification_grid.csv` (via run_resnet_update)
+
 ## 5) Retrieval with ML embeddings (CNN)
 ```
 python scripts/tasks/run_retrieval_ml.py --model outputs/models/cnn.pt --model-type cnn
@@ -67,6 +74,12 @@ Expected: `outputs/history/panns_transfer.csv`
 python scripts/models/eval_ast_transfer.py
 ```
 Expected: `outputs/history/ast_transfer.csv`
+
+### 6.3 CLAP transfer (linear probe)
+```
+python scripts/models/eval_clap_transfer.py
+```
+Expected: `outputs/history/clap_transfer.csv`
 
 ## 7) Retrieval with pretrained embeddings (PANNs / AST / CLAP)
 ```

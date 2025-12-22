@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+from pathlib import Path
 
 import numpy as np
 import torch
@@ -19,6 +20,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--history", type=str, default="outputs/history/panns_transfer.csv")
+    parser.add_argument("--output", type=str, default="outputs/models/panns_transfer.pt")
     return parser.parse_args()
 
 
@@ -37,7 +39,7 @@ def main() -> None:
     train_y = np.array([item.target for item in train_items], dtype=np.int64)
     test_y = np.array([item.target for item in test_items], dtype=np.int64)
 
-    history, acc = train_linear_classifier(
+    history, acc, best_state = train_linear_classifier(
         train_x,
         train_y,
         test_x,
@@ -50,6 +52,15 @@ def main() -> None:
 
     print(f"PANNs transfer accuracy (fold 5): {acc:.4f}")
     write_history_csv(history, args.history, ["epoch", "train_loss", "train_acc", "test_acc"])
+    if args.output:
+        Path(args.output).parent.mkdir(parents=True, exist_ok=True)
+        torch.save(
+            {
+                "model_state": best_state,
+                "config": vars(args),
+            },
+            args.output,
+        )
 
 
 if __name__ == "__main__":

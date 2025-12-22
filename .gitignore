@@ -13,15 +13,7 @@ ehthumbs.db
 *.sublime-project
 *.code-workspace
 
-# Logs and temp files
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-*.pid
-*.seed
-*.pid.lock
+# Temp files
 tmp/
 temp/
 
@@ -59,4 +51,5 @@ env/
 data/ESC-50-master/**
 !data/ESC-50-master/.gitkeep
 data/master.zip
-outputs/
+# Ignore numpy array files in outputs (only .npy)
+outputs/results/*/features/*

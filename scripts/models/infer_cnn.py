@@ -10,7 +10,7 @@ from torch.utils.data import DataLoader
 from src.datasets.esc50 import Esc50Meta, Esc50FeatureDataset
 from src.dsp.mfcc import MfccConfig
 from src.features.cache import FeatureCache
-from src.models.cnn import SimpleCnn
+from src.models.resnet import ResNetAudio
 
 
 def parse_args() -> argparse.Namespace:
@@ -47,7 +47,7 @@ def main() -> None:
     query_ds = Esc50FeatureDataset(query_items, feature_cache, "log_mel", cfg, postprocess=to_tensor)
     loader = DataLoader(query_ds, batch_size=args.batch_size, shuffle=False, num_workers=2)
 
-    model = SimpleCnn(n_classes=50).to(device)
+    model = ResNetAudio(n_classes=50).to(device)
     checkpoint = torch.load(args.checkpoint, map_location=device)
     model.load_state_dict(checkpoint["model_state"])
     model.eval()

@@ -1,5 +1,6 @@
 import math
 from dataclasses import dataclass
+from functools import lru_cache
 
 import numpy as np
 
@@ -45,30 +46,49 @@ def mel_filterbank(
 
     fbank = np.zeros((n_mels, n_fft // 2 + 1), dtype=np.float64)
     for m in range(1, n_mels + 1):
-        left = bin_freqs[m - 1]
-        center = bin_freqs[m]
-        right = bin_freqs[m + 1]
+        left, center, right = bin_freqs[m - 1], bin_freqs[m], bin_freqs[m + 1]
         if right <= left:
             continue
-        for k in range(left, center):
+        if center > left:
+            k = np.arange(left, center)
             fbank[m - 1, k] = (k - left) / max(1, center - left)
-        for k in range(center, right):
+        if right > center:
+            k = np.arange(center, right)
             fbank[m - 1, k] = (right - k) / max(1, right - center)
     return fbank
 
 
+@lru_cache(maxsize=128)
+def _mel_filterbank_cached(
+    n_mels: int,
+    n_fft: int,
+    sample_rate: int,
+    f_min: float,
+    f_max: float | None,
+) -> np.ndarray:
+    """Cache wrapper to avoid rebuilding filterbanks for identical configs."""
+    return mel_filterbank(n_mels, n_fft, sample_rate, f_min, f_max)
+
+
 def dct_type_2(x: np.ndarray, n_mfcc: int) -> np.ndarray:
     n = x.shape[-1]
+    basis = _dct_basis(n_mfcc, n)
+    return 2.0 * np.dot(x, basis.T)
+
+
+@lru_cache(maxsize=64)
+def _dct_basis(n_mfcc: int, n: int) -> np.ndarray:
     k = np.arange(n_mfcc).reshape(-1, 1)
     n_idx = np.arange(n).reshape(1, -1)
-    basis = np.cos(math.pi / n * (n_idx + 0.5) * k)
-    return 2.0 * np.dot(x, basis.T)
+    return np.cos(math.pi / n * (n_idx + 0.5) * k)
 
 
 def log_mel_spectrogram(signal: np.ndarray, cfg: MfccConfig) -> np.ndarray:
     if cfg.pre_emphasis > 0:
         signal = np.append(signal[0], signal[1:] - cfg.pre_emphasis * signal[:-1])
     n_fft = cfg.n_fft or cfg.frame_length
+    # Align with our FFT padding behavior (next power of two).
+    n_fft = 1 << (n_fft - 1).bit_length()
     spec = stft(
         signal,
         frame_length=cfg.frame_length,
@@ -77,7 +97,7 @@ def log_mel_spectrogram(signal: np.ndarray, cfg: MfccConfig) -> np.ndarray:
         n_fft=n_fft,
     )
     power = np.abs(spec) ** 2
-    fbank = mel_filterbank(cfg.n_mels, n_fft, cfg.sample_rate, cfg.f_min, cfg.f_max)
+    fbank = _mel_filterbank_cached(cfg.n_mels, n_fft, cfg.sample_rate, cfg.f_min, cfg.f_max)
     mel_spec = np.dot(power, fbank.T)
     mel_spec = np.maximum(mel_spec, 1e-10)
     return np.log(mel_spec)
@@ -87,3 +107,33 @@ def mfcc(signal: np.ndarray, cfg: MfccConfig) -> np.ndarray:
     log_mel = log_mel_spectrogram(signal, cfg)
     cepstrum = dct_type_2(log_mel, cfg.n_mfcc)
     return cepstrum
+
+
+# Legacy mel filter (reference, not used)
+# def mel_filterbank_legacy(
+#     n_mels: int,
+#     n_fft: int,
+#     sample_rate: int,
+#     f_min: float = 0.0,
+#     f_max: float | None = None,
+# ) -> np.ndarray:
+#     if f_max is None:
+#         f_max = sample_rate / 2
+#     mel_min = _hz_to_mel(f_min)
+#     mel_max = _hz_to_mel(f_max)
+#     mel_points = np.linspace(mel_min, mel_max, n_mels + 2)
+#     hz_points = np.array([_mel_to_hz(m) for m in mel_points])
+#     bin_freqs = np.floor((n_fft + 1) * hz_points / sample_rate).astype(int)
+# 
+#     fbank = np.zeros((n_mels, n_fft // 2 + 1), dtype=np.float64)
+#     for m in range(1, n_mels + 1):
+#         left = bin_freqs[m - 1]
+#         center = bin_freqs[m]
+#         right = bin_freqs[m + 1]
+#         if right <= left:
+#             continue
+#         for k in range(left, center):
+#             fbank[m - 1, k] = (k - left) / max(1, center - left)
+#         for k in range(center, right):
+#             fbank[m - 1, k] = (right - k) / max(1, right - center)
+#     return fbank

@@ -8,7 +8,7 @@ import torch
 from src.datasets.esc50 import Esc50Meta, Esc50FeatureDataset, get_fold_splits
 from src.dsp.mfcc import MfccConfig
 from src.features.cache import FeatureCache
-from src.models.cnn import SimpleCnn
+from src.models.resnet import ResNetAudio
 from src.tasks.classification import build_dataloaders, train_supervised_classifier
 from src.utils.history import write_history_csv
 from src.utils.seed import set_seed
@@ -21,7 +21,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--frame-length", type=int, default=1024)
     parser.add_argument("--hop-length", type=int, default=512)
     parser.add_argument("--n-mels", type=int, default=40)
-    parser.add_argument("--epochs", type=int, default=30)
+    parser.add_argument("--epochs", type=int, default=50)
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--seed", type=int, default=42)
@@ -55,7 +55,7 @@ def main() -> None:
     train_loader, test_loader = build_dataloaders(train_ds, test_ds, batch_size=args.batch_size)
 
     device = torch.device(args.device)
-    model = SimpleCnn(n_classes=50).to(device)
+    model = ResNetAudio(n_classes=50).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
 
     history, best_acc, best_state = train_supervised_classifier(

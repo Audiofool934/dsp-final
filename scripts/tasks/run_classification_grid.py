@@ -8,7 +8,7 @@ import torch
 from src.datasets.esc50 import Esc50Meta, Esc50FeatureDataset, get_fold_splits
 from src.dsp.mfcc import MfccConfig
 from src.features.cache import FeatureCache
-from src.models.cnn import SimpleCnn
+from src.models.resnet import ResNetAudio
 from src.tasks.classification import build_dataloaders, train_supervised_classifier
 from src.utils.history import write_history_csv
 from src.utils.seed import set_seed
@@ -21,9 +21,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--frame-lengths", type=int, nargs="+", default=[1024])
     parser.add_argument("--hop-lengths", type=int, nargs="+", default=[512])
     parser.add_argument("--n-mels", type=int, default=40)
-    parser.add_argument("--epochs", type=int, default=20)
+    parser.add_argument("--epochs", type=int, default=50)
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--lr", type=float, default=1e-3)
+    parser.add_argument("--num-workers", type=int, default=2)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--output", type=str, default="outputs/classification_grid.csv")
@@ -32,9 +33,11 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def train_eval(train_ds, test_ds, device, epochs, batch_size, lr):
-    train_loader, test_loader = build_dataloaders(train_ds, test_ds, batch_size=batch_size)
-    model = SimpleCnn(n_classes=50).to(device)
+def train_eval(train_ds, test_ds, device, epochs, batch_size, lr, num_workers):
+    train_loader, test_loader = build_dataloaders(
+        train_ds, test_ds, batch_size=batch_size, num_workers=num_workers
+    )
+    model = ResNetAudio(n_classes=50).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
     history, best_acc, _ = train_supervised_classifier(
         model,
@@ -75,6 +78,7 @@ def main() -> None:
                 epochs=args.epochs,
                 batch_size=args.batch_size,
                 lr=args.lr,
+                num_workers=args.num_workers,
             )
             results.append(
                 {

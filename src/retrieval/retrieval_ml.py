@@ -12,7 +12,7 @@ from src.dsp.mfcc import MfccConfig
 from src.models.ast import extract_embeddings as extract_ast_embeddings
 from src.models.ast import load_ast
 from src.models.clap import extract_audio_embeddings, load_clap_audio_model
-from src.models.cnn import SimpleCnn
+from src.models.resnet import ResNetAudio
 
 from src.features.cache import FeatureCache, get_or_compute_embedding
 from src.models.panns import extract_embeddings as extract_panns_embeddings
@@ -28,7 +28,7 @@ class RetrievalResult:
 
 
 def _extract_embeddings(
-    model: SimpleCnn,
+    model: torch.nn.Module,
     dataset: Esc50TorchDataset,
     device: torch.device,
     batch_size: int = 32,
@@ -107,10 +107,9 @@ def run_model_retrieval(
     model_type = model_type.lower()
     if model_type == "cnn":
         db_ds, query_ds = build_datasets(db_items, query_items, cfg, feature_cache=feature_cache)
-        model = SimpleCnn(n_classes=50)
+        model = ResNetAudio(n_classes=50).to(device)
         checkpoint = torch.load(model_path, map_location=device)
         model.load_state_dict(checkpoint["model_state"])
-        model.to(device)
 
         db_embeddings = _extract_embeddings(model, db_ds, device, batch_size=batch_size)
         query_embeddings = _extract_embeddings(model, query_ds, device, batch_size=batch_size)

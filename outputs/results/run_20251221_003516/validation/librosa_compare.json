@@ -1,0 +1,11 @@
+{
+  "file": "5-103415-A-2.wav",
+  "sample_rate": 44100,
+  "frame_length": 1024,
+  "hop_length": 512,
+  "n_fft": 1024,
+  "stft_complex_rel_error": 2.5356998233773264e-08,
+  "stft_mag_rel_error": 4.765073822367386e-08,
+  "log_mel_rel_error": 0.06192415654966491,
+  "mfcc_rel_error": 0.02519876351274301
+}

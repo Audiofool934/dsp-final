@@ -87,7 +87,7 @@ def train_linear_classifier(
     epochs: int,
     lr: float,
     batch_size: int,
-) -> tuple[list[dict], float]:
+) -> tuple[list[dict], float, dict]:
     train_ds = TensorDataset(
         torch.tensor(train_x, dtype=torch.float32),
         torch.tensor(train_y, dtype=torch.long),
@@ -99,6 +99,8 @@ def train_linear_classifier(
     criterion = nn.CrossEntropyLoss()
 
     history = []
+    best_acc = -1.0
+    best_state: dict = {}
     for epoch in range(1, epochs + 1):
         model.train()
         correct = 0
@@ -127,6 +129,9 @@ def train_linear_classifier(
             logits = model(feats)
             preds = torch.argmax(logits, dim=1)
             test_acc = (preds == targets).float().mean().item()
+        if test_acc > best_acc:
+            best_acc = test_acc
+            best_state = {k: v.detach().cpu() for k, v in model.state_dict().items()}
         history.append(
             {
                 "epoch": epoch,
@@ -135,4 +140,4 @@ def train_linear_classifier(
                 "test_acc": test_acc,
             }
         )
-    return history, history[-1]["test_acc"]
+    return history, best_acc, best_state

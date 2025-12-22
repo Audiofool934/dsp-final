@@ -1,0 +1,12 @@
+filename,target,target_label,predicted_target,predicted_label,true_target,true_label
+5-103416-A-2.wav,2,pig,1,rooster,2,pig
+5-177957-A-40.wav,40,helicopter,35,washing machine,40,helicopter
+5-191131-A-40.wav,40,helicopter,47,airplane,40,helicopter
+5-205898-A-40.wav,40,helicopter,35,washing machine,40,helicopter
+5-210540-A-13.wav,13,crickets,4,frog,13,crickets
+5-216213-A-13.wav,13,crickets,4,frog,13,crickets
+5-220955-A-40.wav,40,helicopter,16,wind,40,helicopter
+5-234263-A-25.wav,25,footsteps,30,door wood knock,25,footsteps
+5-243449-A-14.wav,14,chirping birds,13,crickets,14,chirping birds
+5-250753-A-34.wav,34,can opening,39,glass breaking,34,can opening
+5-252248-A-34.wav,34,can opening,31,mouse click,34,can opening

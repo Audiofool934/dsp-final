@@ -2,16 +2,18 @@ from __future__ import annotations
 
 import argparse
 import csv
-import json
 import os
-import re
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+import threading
 
 from google import genai
 from google.genai import types
+from tqdm import tqdm
 
 from src.datasets.esc50 import Esc50Meta
+from src.tasks.llm_baseline import build_label_lookup, extract_label_from_response
 
 
 def parse_args() -> argparse.Namespace:
@@ -21,47 +23,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--api-key", type=str, default=None)
     parser.add_argument("--max-samples", type=int, default=None)
     parser.add_argument("--sleep", type=float, default=0.0)
+    parser.add_argument("--workers", type=int, default=1)
+    parser.add_argument("--log-every", type=int, default=10)
     parser.add_argument("--output", type=str, default="outputs/llm_predictions.csv")
     parser.add_argument("--resume", action="store_true", help="Skip files already in output CSV")
+    parser.add_argument(
+        "--prompt-style",
+        type=str,
+        default="simple",
+        choices=["simple", "guided"],
+        help="Prompt format: simple classification or guided (summary + label).",
+    )
     return parser.parse_args()
-
-
-def build_labels(meta: Esc50Meta):
-    categories = sorted({item.category for item in meta.items})
-    display_labels = [c.replace("_", " ") for c in categories]
-    category_to_target = {}
-    for item in meta.items:
-        if item.category not in category_to_target:
-            category_to_target[item.category] = item.target
-    display_to_category = {c.replace("_", " "): c for c in categories}
-    return categories, display_labels, display_to_category, category_to_target
-
-
-def normalize_text(text: str) -> str:
-    text = text.lower()
-    text = text.replace("sound of", "")
-    text = re.sub(r"[^a-z0-9\\s]", " ", text)
-    return " ".join(text.split())
-
-
-def extract_label(text: str, display_labels: list[str]) -> str | None:
-    try:
-        match = re.search(r"\\{.*\\}", text, re.DOTALL)
-        if match:
-            payload = json.loads(match.group(0))
-            if isinstance(payload, dict) and "label" in payload:
-                label = payload["label"].strip().lower()
-                for candidate in display_labels:
-                    if label == candidate.lower():
-                        return candidate
-    except Exception:
-        pass
-
-    norm = normalize_text(text)
-    for candidate in display_labels:
-        if candidate in norm:
-            return candidate
-    return None
 
 
 def main() -> None:
@@ -70,11 +43,22 @@ def main() -> None:
     if not api_key:
         raise ValueError("Missing API key. Set GOOGLE_API_KEY or GEMINI_API_KEY, or pass --api-key.")
 
+    if args.prompt_style != "simple" and args.output == "outputs/llm_predictions.csv":
+        args.output = "outputs/llm_predictions_guided.csv"
+
     meta = Esc50Meta(args.data_root)
     items = meta.by_folds([5])
-    categories, display_labels, display_to_category, category_to_target = build_labels(meta)
+    lookup = build_label_lookup(meta)
+    display_labels = lookup.display_labels
 
-    client = genai.Client(api_key=api_key)
+    thread_local = threading.local()
+
+    def get_client():
+        client = getattr(thread_local, "client", None)
+        if client is None:
+            client = genai.Client(api_key=api_key)
+            thread_local.client = client
+        return client
 
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -86,22 +70,47 @@ def main() -> None:
             for row in reader:
                 processed.add(row["filename"])
 
-    rows = []
-    for idx, item in enumerate(items):
-        if args.max_samples and idx >= args.max_samples:
-            break
-        if item.filename in processed:
-            continue
-
-        with open(item.path, "rb") as f:
-            audio_bytes = f.read()
-
+    if args.prompt_style == "guided":
+        label_lines = [f"{idx} = {lookup.target_to_display[idx]}" for idx in sorted(lookup.target_to_display)]
+        prompt = (
+            "You are an ESC-50 audio classifier.\n\n"
+            "Step 1 (brief understanding):\n"
+            "Describe the PRIMARY sound in 1 short sentence.\n\n"
+            "Step 2 (classification):\n"
+            "Pick exactly ONE label from the list below.\n\n"
+            "Return ONLY valid JSON:\n"
+            "{\n"
+            "  \"summary\": \"<1 short sentence>\",\n"
+            "  \"label_id\": <int>,\n"
+            "  \"label\": \"<label name>\",\n"
+            "  \"confidence\": <float 0-1>\n"
+            "}\n\n"
+            "Rules:\n"
+            "- The label MUST be from the list. No other labels.\n"
+            "- Do NOT output Markdown or any extra text.\n"
+            "- If unsure, choose the closest label.\n\n"
+            "Label list:\n"
+            + "\n".join(label_lines)
+        )
+    else:
         prompt = (
             "Classify this audio into one of the ESC-50 categories. "
             "Return JSON only: {\"label\": \"<one label>\"}. "
             "Valid labels: " + ", ".join(display_labels)
         )
 
+    pending_items = []
+    for idx, item in enumerate(items):
+        if args.max_samples and idx >= args.max_samples:
+            break
+        if item.filename in processed:
+            continue
+        pending_items.append(item)
+
+    def process_item(item):
+        with open(item.path, "rb") as f:
+            audio_bytes = f.read()
+        client = get_client()
         response = client.models.generate_content(
             model=args.model,
             contents=[
@@ -114,28 +123,27 @@ def main() -> None:
         )
 
         text = response.text or ""
-        label = extract_label(text, display_labels)
+        label = extract_label_from_response(text, lookup)
         if label is None:
             predicted_target = -1
             predicted_label = "unknown"
         else:
-            category = display_to_category[label]
-            predicted_target = category_to_target[category]
+            category = lookup.display_to_category[label]
+            predicted_target = lookup.category_to_target[category]
             predicted_label = label
-
-        rows.append(
-            {
-                "filename": item.filename,
-                "predicted_target": predicted_target,
-                "predicted_label": predicted_label,
-                "response": text,
-            }
-        )
 
         if args.sleep > 0:
             time.sleep(args.sleep)
 
+        return {
+            "filename": item.filename,
+            "predicted_target": predicted_target,
+            "predicted_label": predicted_label,
+            "response": text,
+        }
+
     write_header = not output_path.exists() or not args.resume
+    rows_written = 0
     with output_path.open("a", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(
             f,
@@ -143,9 +151,28 @@ def main() -> None:
         )
         if write_header:
             writer.writeheader()
-        writer.writerows(rows)
+        if args.workers and args.workers > 1:
+            with ThreadPoolExecutor(max_workers=args.workers) as executor:
+                futures = [executor.submit(process_item, item) for item in pending_items]
+                with tqdm(total=len(pending_items), desc="gemini", unit="audio") as pbar:
+                    for future in as_completed(futures):
+                        row = future.result()
+                        writer.writerow(row)
+                        f.flush()
+                        rows_written += 1
+                        if args.log_every > 0 and rows_written % args.log_every == 0:
+                            tqdm.write(f"gemini progress: {rows_written}/{len(pending_items)}", end="\n")
+                        pbar.update(1)
+        else:
+            for item in tqdm(pending_items, desc="gemini", unit="audio"):
+                row = process_item(item)
+                writer.writerow(row)
+                f.flush()
+                rows_written += 1
+                if args.log_every > 0 and rows_written % args.log_every == 0:
+                    tqdm.write(f"gemini progress: {rows_written}/{len(pending_items)}", end="\n")
 
-    print(f"Saved {len(rows)} predictions to {output_path}")
+    print(f"Saved {rows_written} predictions to {output_path}")
 
 
 if __name__ == "__main__":

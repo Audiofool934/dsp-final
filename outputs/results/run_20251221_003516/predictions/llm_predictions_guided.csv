@@ -1,0 +1,2401 @@
+filename,predicted_target,predicted_label,response
+5-103420-A-2.wav,1,rooster,"{
+  ""summary"": ""A rooster crows loudly multiple times."",
+  ""label_id"": 1,
+  ""label"": ""rooster"",
+  ""confidence"": 1.0
+}"
+5-117120-A-42.wav,42,siren,"{
+  ""summary"": ""A loud emergency siren wails with a distinctive rising and falling pitch."",
+  ""label_id"": 42,
+  ""label"": ""siren"",
+  ""confidence"": 1.0
+}"
+5-103421-A-2.wav,2,pig,"{
+  ""summary"": ""The audio features repetitive and distinct pig squealing sounds."",
+  ""label_id"": 2,
+  ""label"": ""pig"",
+  ""confidence"": 0.98
+}"
+5-117118-A-42.wav,42,siren,"{
+  ""summary"": ""A loud, oscillating emergency siren wails continuously."",
+  ""label_id"": 42,
+  ""label"": ""siren"",
+  ""confidence"": 0.99
+}"
+5-103418-A-2.wav,0,dog,"{
+  ""summary"": ""A dog is barking loudly and repeatedly."",
+  ""label_id"": 0,
+  ""label"": ""dog"",
+  ""confidence"": 1.0
+}"
+5-103416-A-2.wav,1,rooster,"{
+  ""summary"": ""A rooster crows loudly and repeatedly."",
+  ""label_id"": 1,
+  ""label"": ""rooster"",
+  ""confidence"": 1.0
+}"
+5-103415-A-2.wav,2,pig,"{
+  ""summary"": ""A series of rhythmic and loud pig grunts."",
+  ""label_id"": 2,
+  ""label"": ""pig"",
+  ""confidence"": 0.98
+}"
+5-103422-A-2.wav,9,crow,"{
+  ""summary"": ""A crow is cawing loudly and repeatedly."",
+  ""label_id"": 9,
+  ""label"": ""crow"",
+  ""confidence"": 0.98
+}"
+5-127990-A-2.wav,0,dog,"{
+  ""summary"": ""A dog is barking and making playful grunting noises."",
+  ""label_id"": 0,
+  ""label"": ""dog"",
+  ""confidence"": 1.0
+}"
+5-117250-A-2.wav,2,pig,"{
+  ""summary"": ""A pig is making loud oinking and grunting sounds."",
+  ""label_id"": 2,
+  ""label"": ""pig"",
+  ""confidence"": 0.95
+}"
+5-133989-A-42.wav,42,siren,"{
+  ""summary"": ""A high-pitched, oscillating emergency vehicle siren wails continuously."",
+  ""label_id"": 42,
+  ""label"": ""siren"",
+  ""confidence"": 1.0
+}"
+5-133989-B-42.wav,42,siren,"{
+  ""summary"": ""A loud emergency siren wails repeatedly."",
+  ""label_id"": 42,
+  ""label"": ""siren"",
+  ""confidence"": 0.99
+}"
+5-117122-A-42.wav,42,siren,"{
+  ""summary"": ""A loud emergency siren wails with a rising and falling pitch."",
+  ""label_id"": 42,
+  ""label"": ""siren"",
+  ""confidence"": 0.98
+}"
+5-147297-A-27.wav,27,brushing teeth,"{
+  ""summary"": ""The audio features the rhythmic scrubbing sound of someone brushing their teeth."",
+  ""label_id"": 27,
+  ""label"": ""brushing teeth"",
+  ""confidence"": 0.98
+}"
+5-141683-A-35.wav,47,airplane,"{
+  ""summary"": ""A steady, low-frequency mechanical hum consistent with an airplane engine in flight."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.95
+}"
+5-117773-A-16.wav,47,airplane,"{
+  ""summary"": ""A continuous low-frequency drone consistent with an airplane engine."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.95
+}"
+5-150409-A-42.wav,10,rain,"{
+  ""summary"": ""The rhythmic sound of a train moving along tracks is heard."",
+  ""label_id"": 45,
+  ""label"": ""train"",
+  ""confidence"": 0.99
+}"
+5-151085-A-20.wav,20,crying baby,"{
+  ""summary"": ""A baby is crying loudly and intensely."",
+  ""label_id"": 20,
+  ""label"": ""crying baby"",
+  ""confidence"": 1.0
+}"
+5-156026-D-4.wav,9,crow,"{
+  ""summary"": ""A crow is making repetitive, harsh cawing sounds."",
+  ""label_id"": 9,
+  ""label"": ""crow"",
+  ""confidence"": 0.98
+}"
+5-156026-A-4.wav,9,crow,"{
+  ""summary"": ""A crow is cawing repeatedly."",
+  ""label_id"": 9,
+  ""label"": ""crow"",
+  ""confidence"": 0.95
+}"
+5-156026-B-4.wav,4,frog,"{
+  ""summary"": ""A frog emits rhythmic, deep croaking sounds."",
+  ""label_id"": 4,
+  ""label"": ""frog"",
+  ""confidence"": 0.99
+}"
+5-156026-C-4.wav,1,rooster,"{
+  ""summary"": ""A rooster is crowing repeatedly."",
+  ""label_id"": 1,
+  ""label"": ""rooster"",
+  ""confidence"": 0.98
+}"
+5-156698-A-18.wav,18,toilet flush,"{
+  ""summary"": ""The sound is a toilet flushing followed by the tank refilling with water."",
+  ""label_id"": 18,
+  ""label"": ""toilet flush"",
+  ""confidence"": 1.0
+}"
+5-156999-B-19.wav,48,fireworks,"{
+  ""summary"": ""Multiple loud explosive bangs followed by reverberating echoes."",
+  ""label_id"": 48,
+  ""label"": ""fireworks"",
+  ""confidence"": 0.95
+}"
+5-156999-C-19.wav,19,thunderstorm,"{
+  ""summary"": ""The audio features several loud, crashing thunderclaps."",
+  ""label_id"": 19,
+  ""label"": ""thunderstorm"",
+  ""confidence"": 0.98
+}"
+5-156999-A-19.wav,19,thunderstorm,"{
+  ""summary"": ""A powerful crack of thunder is followed by a deep, rolling rumble."",
+  ""label_id"": 19,
+  ""label"": ""thunderstorm"",
+  ""confidence"": 0.99
+}"
+5-156999-D-19.wav,48,fireworks,"{
+  ""summary"": ""A series of loud explosive bursts and crackling sounds characteristic of a fireworks display."",
+  ""label_id"": 48,
+  ""label"": ""fireworks"",
+  ""confidence"": 0.98
+}"
+5-157204-B-16.wav,36,vacuum cleaner,"{
+  ""summary"": ""A vacuum cleaner produces a continuous high-pitched mechanical drone and suction sound."",
+  ""label_id"": 36,
+  ""label"": ""vacuum cleaner"",
+  ""confidence"": 0.98
+}"
+5-156999-E-19.wav,19,thunderstorm,"{
+  ""summary"": ""The audio features loud, booming thunderclaps followed by deep, rolling rumbles."",
+  ""label_id"": 19,
+  ""label"": ""thunderstorm"",
+  ""confidence"": 0.98
+}"
+5-157204-A-16.wav,36,vacuum cleaner,"{
+  ""summary"": ""The audio features the consistent mechanical whirring and suction noise of a vacuum cleaner."",
+  ""label_id"": 36,
+  ""label"": ""vacuum cleaner"",
+  ""confidence"": 0.98
+}"
+5-160614-A-48.wav,48,fireworks,"{
+  ""summary"": ""Rapid succession of loud crackling and booming explosions."",
+  ""label_id"": 48,
+  ""label"": ""fireworks"",
+  ""confidence"": 0.98
+}"
+5-160551-A-42.wav,42,siren,"{
+  ""summary"": ""A high-pitched emergency vehicle siren wails repeatedly."",
+  ""label_id"": 42,
+  ""label"": ""siren"",
+  ""confidence"": 0.99
+}"
+5-160614-D-48.wav,48,fireworks,"{
+  ""summary"": ""Multiple loud explosions and whistling sounds from a fireworks display."",
+  ""label_id"": 48,
+  ""label"": ""fireworks"",
+  ""confidence"": 0.98
+}"
+5-160614-C-48.wav,31,mouse click,"{
+  ""summary"": ""A series of sharp, repetitive clicking sounds consistent with a computer mouse."",
+  ""label_id"": 31,
+  ""label"": ""mouse click"",
+  ""confidence"": 0.98
+}"
+5-160614-H-48.wav,48,fireworks,"{
+  ""summary"": ""A series of loud, rapid explosive pops and crackling sounds typical of a pyrotechnic display."",
+  ""label_id"": 48,
+  ""label"": ""fireworks"",
+  ""confidence"": 0.98
+}"
+5-161270-A-33.wav,41,chainsaw,"{
+  ""summary"": ""The audio features the distinct mechanical revving and high-pitched buzzing of a chainsaw."",
+  ""label_id"": 41,
+  ""label"": ""chainsaw"",
+  ""confidence"": 0.98
+}"
+5-160614-B-48.wav,48,fireworks,"{
+  ""summary"": ""A sequence of loud, rapid-fire explosions and crackling consistent with a fireworks display."",
+  ""label_id"": 48,
+  ""label"": ""fireworks"",
+  ""confidence"": 0.98
+}"
+5-160614-G-48.wav,48,fireworks,"{
+  ""summary"": ""The audio features a series of loud fireworks exploding in rapid succession."",
+  ""label_id"": 48,
+  ""label"": ""fireworks"",
+  ""confidence"": 0.98
+}"
+5-160614-F-48.wav,48,fireworks,"{
+  ""summary"": ""A series of loud, rhythmic explosive pops and crackling sounds from fireworks."",
+  ""label_id"": 48,
+  ""label"": ""fireworks"",
+  ""confidence"": 0.98
+}"
+5-160614-E-48.wav,31,mouse click,"{
+  ""summary"": ""Repetitive sharp clicking sounds from a computer mouse."",
+  ""label_id"": 31,
+  ""label"": ""mouse click"",
+  ""confidence"": 0.95
+}"
+5-170338-B-41.wav,41,chainsaw,"{
+  ""summary"": ""The sound features a motorized chainsaw being revved and cutting through material."",
+  ""label_id"": 41,
+  ""label"": ""chainsaw"",
+  ""confidence"": 0.98
+}"
+5-169983-A-5.wav,5,cat,"{
+  ""summary"": ""The audio features the distinct meowing sounds of a cat."",
+  ""label_id"": 5,
+  ""label"": ""cat"",
+  ""confidence"": 1.0
+}"
+5-171118-A-26.wav,26,laughing,"{
+  ""summary"": ""A person is laughing out loud."",
+  ""label_id"": 26,
+  ""label"": ""laughing"",
+  ""confidence"": 0.98
+}"
+5-161270-B-33.wav,44,engine,"{
+  ""summary"": ""A mechanical engine produces a consistent humming and vibrating sound."",
+  ""label_id"": 44,
+  ""label"": ""engine"",
+  ""confidence"": 0.95
+}"
+5-172299-A-5.wav,5,cat,"{
+  ""summary"": ""A cat is producing several loud meows in succession."",
+  ""label_id"": 5,
+  ""label"": ""cat"",
+  ""confidence"": 0.99
+}"
+5-172639-A-5.wav,5,cat,"{
+  ""summary"": ""A cat is meowing repeatedly."",
+  ""label_id"": 5,
+  ""label"": ""cat"",
+  ""confidence"": 1.0
+}"
+5-171653-A-41.wav,41,chainsaw,"{
+  ""summary"": ""A motorized chainsaw is being revved and operated."",
+  ""label_id"": 41,
+  ""label"": ""chainsaw"",
+  ""confidence"": 1.0
+}"
+5-170338-A-41.wav,41,chainsaw,"{
+  ""summary"": ""The audio features the high-pitched mechanical revving and cutting sound of a handheld power tool."",
+  ""label_id"": 41,
+  ""label"": ""chainsaw"",
+  ""confidence"": 0.95
+}"
+5-173568-A-33.wav,5,cat,"{
+  ""summary"": ""A domestic cat is meowing multiple times."",
+  ""label_id"": 5,
+  ""label"": ""cat"",
+  ""confidence"": 0.99
+}"
+5-177779-A-33.wav,38,clock tick,"{
+  ""summary"": ""The audio features a rhythmic and mechanical ticking sound typical of a clock."",
+  ""label_id"": 38,
+  ""label"": ""clock tick"",
+  ""confidence"": 0.95
+}"
+5-177034-A-18.wav,18,toilet flush,"{
+  ""summary"": ""The sound features a toilet being flushed followed by the water refilling the tank."",
+  ""label_id"": 18,
+  ""label"": ""toilet flush"",
+  ""confidence"": 0.98
+}"
+5-177614-A-5.wav,5,cat,"{
+  ""summary"": ""A cat is meowing repeatedly."",
+  ""label_id"": 5,
+  ""label"": ""cat"",
+  ""confidence"": 0.99
+}"
+5-177957-C-40.wav,40,helicopter,"{
+  ""summary"": ""The audio features the distinct rhythmic, low-frequency thrumming of a helicopter's rotor blades."",
+  ""label_id"": 40,
+  ""label"": ""helicopter"",
+  ""confidence"": 0.95
+}"
+5-177957-A-40.wav,35,washing machine,"{
+  ""summary"": ""A continuous mechanical rhythmic hum and vibration characteristic of a washing machine."",
+  ""label_id"": 35,
+  ""label"": ""washing machine"",
+  ""confidence"": 0.9
+}"
+5-177957-B-40.wav,40,helicopter,"{
+  ""summary"": ""A loud, rhythmic mechanical thumping and whirring sound characteristic of a helicopter in flight."",
+  ""label_id"": 40,
+  ""label"": ""helicopter"",
+  ""confidence"": 0.95
+}"
+5-179294-A-46.wav,46,church bells,"{
+  ""summary"": ""Large bells are ringing in a repetitive, melodic sequence."",
+  ""label_id"": 46,
+  ""label"": ""church bells"",
+  ""confidence"": 1.0
+}"
+5-178997-A-24.wav,24,coughing,"{
+  ""summary"": ""A person is coughing repeatedly."",
+  ""label_id"": 24,
+  ""label"": ""coughing"",
+  ""confidence"": 0.98
+}"
+5-177957-E-40.wav,47,airplane,"{
+  ""summary"": ""The audio features a steady, low-frequency mechanical drone of an airplane engine."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.95
+}"
+5-177957-D-40.wav,47,airplane,"{
+  ""summary"": ""A steady, low-frequency drone of an airplane engine during flight."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.95
+}"
+5-179496-A-16.wav,42,siren,"{
+  ""summary"": ""A loud emergency vehicle siren oscillates continuously."",
+  ""label_id"": 42,
+  ""label"": ""siren"",
+  ""confidence"": 0.98
+}"
+5-179860-A-43.wav,43,car horn,"{
+  ""summary"": ""A rhythmic and high-pitched car horn is honking."",
+  ""label_id"": 43,
+  ""label"": ""car horn"",
+  ""confidence"": 1.0
+}"
+5-179496-B-16.wav,36,vacuum cleaner,"{
+  ""summary"": ""A continuous, loud mechanical whirring sound characteristic of a vacuum cleaner."",
+  ""label_id"": 36,
+  ""label"": ""vacuum cleaner"",
+  ""confidence"": 0.95
+}"
+5-179866-A-43.wav,43,car horn,"{
+  ""summary"": ""The primary sound is a car horn honking twice in quick succession."",
+  ""label_id"": 43,
+  ""label"": ""car horn"",
+  ""confidence"": 0.98
+}"
+5-179863-A-43.wav,43,car horn,"{
+  ""summary"": ""A car horn honks twice in quick succession."",
+  ""label_id"": 43,
+  ""label"": ""car horn"",
+  ""confidence"": 0.99
+}"
+5-179865-A-43.wav,43,car horn,"{
+  ""summary"": ""The audio consists of a car horn honking twice in quick succession."",
+  ""label_id"": 43,
+  ""label"": ""car horn"",
+  ""confidence"": 0.99
+}"
+5-179868-A-43.wav,43,car horn,"{
+  ""summary"": ""The primary sound is a car horn honking repeatedly followed by background shouting and city noise."",
+  ""label_id"": 43,
+  ""label"": ""car horn"",
+  ""confidence"": 0.98
+}"
+5-180156-A-43.wav,43,car horn,"{
+  ""summary"": ""A car horn honks repeatedly amidst the sound of traffic."",
+  ""label_id"": 43,
+  ""label"": ""car horn"",
+  ""confidence"": 0.95
+}"
+5-180156-B-43.wav,43,car horn,"{
+  ""summary"": ""The audio features multiple repetitive honks from a car horn."",
+  ""label_id"": 43,
+  ""label"": ""car horn"",
+  ""confidence"": 0.98
+}"
+5-180156-C-43.wav,43,car horn,"{
+  ""summary"": ""The primary sound is a car horn honking repeatedly in an outdoor environment."",
+  ""label_id"": 43,
+  ""label"": ""car horn"",
+  ""confidence"": 1.0
+}"
+5-181458-A-33.wav,33,door wood creaks,"{
+  ""summary"": ""A wooden door makes distinct squeaking and groaning sounds as it moves."",
+  ""label_id"": 33,
+  ""label"": ""door wood creaks"",
+  ""confidence"": 0.98
+}"
+5-180229-A-27.wav,27,brushing teeth,"{
+  ""summary"": ""The sound consists of rhythmic scrubbing noises consistent with brushing teeth."",
+  ""label_id"": 27,
+  ""label"": ""brushing teeth"",
+  ""confidence"": 0.95
+}"
+5-182012-A-36.wav,36,vacuum cleaner,"{
+  ""summary"": ""The audio features a continuous, high-pitched mechanical suction sound."",
+  ""label_id"": 36,
+  ""label"": ""vacuum cleaner"",
+  ""confidence"": 0.95
+}"
+5-181977-A-35.wav,35,washing machine,"{
+  ""summary"": ""A mechanical, rhythmic tumbling and sloshing sound of a washing machine in operation."",
+  ""label_id"": 35,
+  ""label"": ""washing machine"",
+  ""confidence"": 0.98
+}"
+5-182007-A-36.wav,36,vacuum cleaner,"{
+  ""summary"": ""A continuous loud whirring and suction sound of a vacuum cleaner."",
+  ""label_id"": 36,
+  ""label"": ""vacuum cleaner"",
+  ""confidence"": 0.98
+}"
+5-182010-A-36.wav,36,vacuum cleaner,"{
+  ""summary"": ""A loud, continuous mechanical whirring of a vacuum cleaner."",
+  ""label_id"": 36,
+  ""label"": ""vacuum cleaner"",
+  ""confidence"": 0.98
+}"
+5-181766-A-10.wav,10,rain,"{
+  ""summary"": ""Heavy rain falls steadily on the ground."",
+  ""label_id"": 10,
+  ""label"": ""rain"",
+  ""confidence"": 0.95
+}"
+5-184871-A-24.wav,24,coughing,"{
+  ""summary"": ""A person is making repetitive coughing sounds."",
+  ""label_id"": 24,
+  ""label"": ""coughing"",
+  ""confidence"": 1.0
+}"
+5-182404-A-18.wav,18,toilet flush,"{
+  ""summary"": ""The sound depicts a toilet being flushed followed by the sound of rushing water."",
+  ""label_id"": 18,
+  ""label"": ""toilet flush"",
+  ""confidence"": 1.0
+}"
+5-184323-A-42.wav,42,siren,"{
+  ""summary"": ""An emergency siren wails with a fluctuating pitch."",
+  ""label_id"": 42,
+  ""label"": ""siren"",
+  ""confidence"": 0.99
+}"
+5-185516-A-27.wav,27,brushing teeth,"{
+  ""summary"": ""The sound of bristles rhythmically scrubbing against teeth."",
+  ""label_id"": 27,
+  ""label"": ""brushing teeth"",
+  ""confidence"": 0.95
+}"
+5-185579-A-41.wav,41,chainsaw,"{
+  ""summary"": ""A motorized chainsaw is revving and cutting."",
+  ""label_id"": 41,
+  ""label"": ""chainsaw"",
+  ""confidence"": 1.0
+}"
+5-185579-B-41.wav,41,chainsaw,"{
+  ""summary"": ""The audio features the high-pitched buzzing and revving of a mechanical power tool."",
+  ""label_id"": 41,
+  ""label"": ""chainsaw"",
+  ""confidence"": 0.98
+}"
+5-185908-A-18.wav,18,toilet flush,"{
+  ""summary"": ""The audio features the distinct sound of a toilet flushing followed by the tank refilling."",
+  ""label_id"": 18,
+  ""label"": ""toilet flush"",
+  ""confidence"": 0.98
+}"
+5-187444-A-33.wav,36,vacuum cleaner,"{
+  ""summary"": ""The continuous mechanical drone of a vacuum cleaner being operated."",
+  ""label_id"": 36,
+  ""label"": ""vacuum cleaner"",
+  ""confidence"": 0.95
+}"
+5-187201-B-4.wav,13,crickets,"{
+  ""summary"": ""The audio features the persistent, rhythmic chirping of crickets."",
+  ""label_id"": 13,
+  ""label"": ""crickets"",
+  ""confidence"": 0.98
+}"
+5-187201-A-4.wav,4,frog,"{
+  ""summary"": ""The audio features rhythmic, high-pitched chirping sounds produced by frogs."",
+  ""label_id"": 4,
+  ""label"": ""frog"",
+  ""confidence"": 0.98
+}"
+5-187979-A-21.wav,21,sneezing,"{
+  ""summary"": ""A person is sneezing twice."",
+  ""label_id"": 21,
+  ""label"": ""sneezing"",
+  ""confidence"": 1.0
+}"
+5-188495-A-19.wav,19,thunderstorm,"{
+  ""summary"": ""Deep rumbling and sharp cracks of thunder indicate an ongoing storm."",
+  ""label_id"": 19,
+  ""label"": ""thunderstorm"",
+  ""confidence"": 0.98
+}"
+5-188365-A-36.wav,36,vacuum cleaner,"{
+  ""summary"": ""A loud, steady whirring sound of a vacuum cleaner."",
+  ""label_id"": 36,
+  ""label"": ""vacuum cleaner"",
+  ""confidence"": 0.98
+}"
+5-188606-A-33.wav,33,door wood creaks,"{
+  ""summary"": ""A slow, high-pitched creaking sound of a wooden door moving."",
+  ""label_id"": 33,
+  ""label"": ""door wood creaks"",
+  ""confidence"": 0.98
+}"
+5-188716-A-46.wav,46,church bells,"{
+  ""summary"": ""The rhythmic tolling of large church bells."",
+  ""label_id"": 46,
+  ""label"": ""church bells"",
+  ""confidence"": 1.0
+}"
+5-188655-A-10.wav,10,rain,"{
+  ""summary"": ""A steady and continuous sound of rainfall."",
+  ""label_id"": 10,
+  ""label"": ""rain"",
+  ""confidence"": 0.98
+}"
+5-188796-A-45.wav,10,rain,"{
+  ""summary"": ""The sound features the rhythmic, mechanical clanking of a train moving along metal tracks."",
+  ""label_id"": 45,
+  ""label"": ""train"",
+  ""confidence"": 1.0
+}"
+5-189795-A-4.wav,4,frog,"{
+  ""summary"": ""Multiple frogs are making rhythmic croaking sounds in a natural setting."",
+  ""label_id"": 4,
+  ""label"": ""frog"",
+  ""confidence"": 0.95
+}"
+5-189212-A-12.wav,12,crackling fire,"{
+  ""summary"": ""A steady sound of wood burning and snapping in a fire."",
+  ""label_id"": 12,
+  ""label"": ""crackling fire"",
+  ""confidence"": 0.98
+}"
+5-188945-A-45.wav,47,airplane,"{
+  ""summary"": ""The sound is a continuous, loud mechanical roar of an airplane engine."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.9
+}"
+5-191497-A-33.wav,33,door wood creaks,"{
+  ""summary"": ""The audio consists of repeated high-pitched wooden creaking sounds, characteristic of a door opening or closing."",
+  ""label_id"": 33,
+  ""label"": ""door wood creaks"",
+  ""confidence"": 0.98
+}"
+5-192191-A-19.wav,19,thunderstorm,"{
+  ""summary"": ""Loud thunder rumbles and cracks during a storm."",
+  ""label_id"": 19,
+  ""label"": ""thunderstorm"",
+  ""confidence"": 1.0
+}"
+5-191131-A-40.wav,47,airplane,"{
+  ""summary"": ""A large aircraft engine roars while flying overhead."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.95
+}"
+5-189237-A-12.wav,12,crackling fire,"{
+  ""summary"": ""The sound of wood popping and crackling in a fire."",
+  ""label_id"": 12,
+  ""label"": ""crackling fire"",
+  ""confidence"": 0.98
+}"
+5-193339-A-10.wav,10,rain,"{
+  ""summary"": ""Heavy rain falls steadily on a surface."",
+  ""label_id"": 10,
+  ""label"": ""rain"",
+  ""confidence"": 0.95
+}"
+5-193473-A-12.wav,12,crackling fire,"{
+  ""summary"": ""A fire crackles with sharp snapping and popping sounds."",
+  ""label_id"": 12,
+  ""label"": ""crackling fire"",
+  ""confidence"": 0.98
+}"
+5-193473-B-12.wav,12,crackling fire,"{
+  ""summary"": ""The audio features sharp, rhythmic popping and snapping noises characteristic of wood burning in a fire."",
+  ""label_id"": 12,
+  ""label"": ""crackling fire"",
+  ""confidence"": 0.98
+}"
+5-194533-A-21.wav,21,sneezing,"{
+  ""summary"": ""A person is sneezing twice in quick succession."",
+  ""label_id"": 21,
+  ""label"": ""sneezing"",
+  ""confidence"": 0.98
+}"
+5-194899-A-3.wav,3,cow,"{
+  ""summary"": ""A cow is making a low, resonant mooing sound."",
+  ""label_id"": 3,
+  ""label"": ""cow"",
+  ""confidence"": 0.99
+}"
+5-194892-A-10.wav,10,rain,"{
+  ""summary"": ""The primary sound is a continuous and steady downpour of rain hitting a surface."",
+  ""label_id"": 10,
+  ""label"": ""rain"",
+  ""confidence"": 0.98
+}"
+5-194899-C-3.wav,3,cow,"{
+  ""summary"": ""A cow is making a loud mooing sound."",
+  ""label_id"": 3,
+  ""label"": ""cow"",
+  ""confidence"": 1.0
+}"
+5-194899-B-3.wav,3,cow,"{
+  ""summary"": ""A cow is letting out a loud, low-pitched moo."",
+  ""label_id"": 3,
+  ""label"": ""cow"",
+  ""confidence"": 0.98
+}"
+5-194899-D-3.wav,3,cow,"{
+  ""summary"": ""A cow is making a distinct mooing sound."",
+  ""label_id"": 3,
+  ""label"": ""cow"",
+  ""confidence"": 1.0
+}"
+5-194930-A-1.wav,1,rooster,"{
+  ""summary"": ""A rooster is crowing loudly."",
+  ""label_id"": 1,
+  ""label"": ""rooster"",
+  ""confidence"": 1.0
+}"
+5-194930-B-1.wav,1,rooster,"{
+  ""summary"": ""A rooster crows loudly several times."",
+  ""label_id"": 1,
+  ""label"": ""rooster"",
+  ""confidence"": 1.0
+}"
+5-195557-A-19.wav,19,thunderstorm,"{
+  ""summary"": ""The audio features the distinct rumbling and cracking sounds of thunder."",
+  ""label_id"": 19,
+  ""label"": ""thunderstorm"",
+  ""confidence"": 0.98
+}"
+5-195517-A-7.wav,7,insects,"{
+  ""summary"": ""A continuous high-pitched buzzing of an insect."",
+  ""label_id"": 7,
+  ""label"": ""insects"",
+  ""confidence"": 0.98
+}"
+5-195710-A-10.wav,10,rain,"{
+  ""summary"": ""Continuous rainfall hitting a surface."",
+  ""label_id"": 10,
+  ""label"": ""rain"",
+  ""confidence"": 0.98
+}"
+5-194932-A-7.wav,41,chainsaw,"{
+  ""summary"": ""The sound is a high-pitched, continuous buzzing of a motorized mechanical tool."",
+  ""label_id"": 41,
+  ""label"": ""chainsaw"",
+  ""confidence"": 0.95
+}"
+5-195518-A-7.wav,7,insects,"{
+  ""summary"": ""High-pitched buzzing of a flying insect near a microphone."",
+  ""label_id"": 7,
+  ""label"": ""insects"",
+  ""confidence"": 0.98
+}"
+5-197121-A-45.wav,10,rain,"{
+  ""summary"": ""A train travels along a track with rhythmic metallic sounds."",
+  ""label_id"": 45,
+  ""label"": ""train"",
+  ""confidence"": 0.98
+}"
+5-197118-A-45.wav,10,rain,"{
+  ""summary"": ""A train travels rhythmically along a set of metal tracks."",
+  ""label_id"": 45,
+  ""label"": ""train"",
+  ""confidence"": 0.98
+}"
+5-197913-A-18.wav,18,toilet flush,"{
+  ""summary"": ""A toilet is flushed followed by the sound of water refilling the tank."",
+  ""label_id"": 18,
+  ""label"": ""toilet flush"",
+  ""confidence"": 0.98
+}"
+5-197121-B-45.wav,49,hand saw,"{
+  ""summary"": ""A manual hand saw is rhythmically cutting through wood."",
+  ""label_id"": 49,
+  ""label"": ""hand saw"",
+  ""confidence"": 0.98
+}"
+5-197446-A-7.wav,35,washing machine,"{
+  ""summary"": ""The audio features the rhythmic mechanical tumbling and water agitation sounds of a washing machine."",
+  ""label_id"": 35,
+  ""label"": ""washing machine"",
+  ""confidence"": 0.95
+}"
+5-197988-A-46.wav,46,church bells,"{
+  ""summary"": ""The audio features the rhythmic and resonant ringing of large church bells."",
+  ""label_id"": 46,
+  ""label"": ""church bells"",
+  ""confidence"": 1.0
+}"
+5-198278-B-7.wav,7,insects,"{
+  ""summary"": ""A continuous high-pitched buzzing sound produced by a swarm of insects."",
+  ""label_id"": 7,
+  ""label"": ""insects"",
+  ""confidence"": 0.98
+}"
+5-198278-A-7.wav,7,insects,"{
+  ""summary"": ""The audio features the continuous, high-pitched buzzing and rhythmic chirping of a swarm of insects."",
+  ""label_id"": 7,
+  ""label"": ""insects"",
+  ""confidence"": 0.95
+}"
+5-198278-C-7.wav,7,insects,"{
+  ""summary"": ""A swarm of insects creates a continuous high-pitched buzzing sound."",
+  ""label_id"": 7,
+  ""label"": ""insects"",
+  ""confidence"": 0.98
+}"
+5-198373-A-46.wav,46,church bells,"{
+  ""summary"": ""Large resonant bells ring rhythmically at regular intervals."",
+  ""label_id"": 46,
+  ""label"": ""church bells"",
+  ""confidence"": 0.98
+}"
+5-198411-A-20.wav,20,crying baby,"{
+  ""summary"": ""A baby is crying loudly and persistently."",
+  ""label_id"": 20,
+  ""label"": ""crying baby"",
+  ""confidence"": 1.0
+}"
+5-198321-A-10.wav,10,rain,"{
+  ""summary"": ""The primary sound is the continuous and steady fall of heavy rain."",
+  ""label_id"": 10,
+  ""label"": ""rain"",
+  ""confidence"": 0.98
+}"
+5-198411-C-20.wav,20,crying baby,"{
+  ""summary"": ""A young baby is crying loudly with distressed vocalizations."",
+  ""label_id"": 20,
+  ""label"": ""crying baby"",
+  ""confidence"": 0.99
+}"
+5-198411-B-20.wav,20,crying baby,"{
+  ""summary"": ""The sound features a young infant crying and wailing loudly."",
+  ""label_id"": 20,
+  ""label"": ""crying baby"",
+  ""confidence"": 1.0
+}"
+5-198411-E-20.wav,20,crying baby,"{
+  ""summary"": ""A human infant is crying loudly and wailing."",
+  ""label_id"": 20,
+  ""label"": ""crying baby"",
+  ""confidence"": 0.99
+}"
+5-198411-D-20.wav,20,crying baby,"{
+  ""summary"": ""A distressed infant is crying loudly and continuously."",
+  ""label_id"": 20,
+  ""label"": ""crying baby"",
+  ""confidence"": 1.0
+}"
+5-198411-F-20.wav,20,crying baby,"{
+  ""summary"": ""A human infant is crying loudly with high-pitched wails."",
+  ""label_id"": 20,
+  ""label"": ""crying baby"",
+  ""confidence"": 0.99
+}"
+5-198891-B-8.wav,8,sheep,"{
+  ""summary"": ""A sheep is bleating repeatedly in an outdoor environment."",
+  ""label_id"": 8,
+  ""label"": ""sheep"",
+  ""confidence"": 0.98
+}"
+5-198411-G-20.wav,20,crying baby,"{
+  ""summary"": ""An infant is crying and sobbing loudly."",
+  ""label_id"": 20,
+  ""label"": ""crying baby"",
+  ""confidence"": 0.99
+}"
+5-198600-A-45.wav,10,rain,"{
+  ""summary"": ""A train is heard traveling rapidly along its tracks."",
+  ""label_id"": 45,
+  ""label"": ""train"",
+  ""confidence"": 0.98
+}"
+5-198891-A-8.wav,8,sheep,"{
+  ""summary"": ""The audio features the distinct bleating sound of a sheep."",
+  ""label_id"": 8,
+  ""label"": ""sheep"",
+  ""confidence"": 0.99
+}"
+5-198891-D-8.wav,8,sheep,"{
+  ""summary"": ""Multiple sheep are bleating loudly in an outdoor setting."",
+  ""label_id"": 8,
+  ""label"": ""sheep"",
+  ""confidence"": 1.0
+}"
+5-199284-A-45.wav,10,rain,"{
+  ""summary"": ""A train travels rhythmically along metal tracks."",
+  ""label_id"": 45,
+  ""label"": ""train"",
+  ""confidence"": 1.0
+}"
+5-198891-C-8.wav,8,sheep,"{
+  ""summary"": ""Several sheep are bleating loudly in a sequence."",
+  ""label_id"": 8,
+  ""label"": ""sheep"",
+  ""confidence"": 0.99
+}"
+5-200329-B-8.wav,8,sheep,"{
+  ""summary"": ""A sheep is bleating repeatedly."",
+  ""label_id"": 8,
+  ""label"": ""sheep"",
+  ""confidence"": 1.0
+}"
+5-199284-B-45.wav,10,rain,"{
+  ""summary"": ""A train travels along metal tracks with a rhythmic clattering and engine noise."",
+  ""label_id"": 45,
+  ""label"": ""train"",
+  ""confidence"": 0.98
+}"
+5-200329-A-8.wav,8,sheep,"{
+  ""summary"": ""A sheep is bleating repeatedly."",
+  ""label_id"": 8,
+  ""label"": ""sheep"",
+  ""confidence"": 0.98
+}"
+5-200329-C-8.wav,8,sheep,"{
+  ""summary"": ""Multiple sheep are bleating loudly in an open area."",
+  ""label_id"": 8,
+  ""label"": ""sheep"",
+  ""confidence"": 1.0
+}"
+5-200334-A-1.wav,1,rooster,"{
+  ""summary"": ""A rooster is crowing loudly."",
+  ""label_id"": 1,
+  ""label"": ""rooster"",
+  ""confidence"": 0.99
+}"
+5-200334-B-1.wav,1,rooster,"{
+  ""summary"": ""A rooster crows loudly in a repetitive sequence."",
+  ""label_id"": 1,
+  ""label"": ""rooster"",
+  ""confidence"": 0.99
+}"
+5-200461-A-11.wav,11,sea waves,"{
+  ""summary"": ""The sound of rhythmic ocean waves crashing against the shore."",
+  ""label_id"": 11,
+  ""label"": ""sea waves"",
+  ""confidence"": 0.98
+}"
+5-200339-A-1.wav,1,rooster,"{
+  ""summary"": ""A rooster is crowing loudly."",
+  ""label_id"": 1,
+  ""label"": ""rooster"",
+  ""confidence"": 1.0
+}"
+5-186924-A-12.wav,11,sea waves,"{
+  ""summary"": ""The rhythmic and powerful sound of ocean waves crashing onto a shore."",
+  ""label_id"": 11,
+  ""label"": ""sea waves"",
+  ""confidence"": 0.98
+}"
+5-201170-A-46.wav,46,church bells,"{
+  ""summary"": ""Rhythmic and melodic ringing of large church bells."",
+  ""label_id"": 46,
+  ""label"": ""church bells"",
+  ""confidence"": 0.99
+}"
+5-201172-A-46.wav,46,church bells,"{
+  ""summary"": ""Multiple resonant church bells are ringing in a rhythmic and overlapping sequence."",
+  ""label_id"": 46,
+  ""label"": ""church bells"",
+  ""confidence"": 0.98
+}"
+5-201274-A-21.wav,21,sneezing,"{
+  ""summary"": ""A person is heard sneezing twice."",
+  ""label_id"": 21,
+  ""label"": ""sneezing"",
+  ""confidence"": 0.95
+}"
+5-201194-A-38.wav,38,clock tick,"{
+  ""summary"": ""A steady and rhythmic mechanical ticking sound."",
+  ""label_id"": 38,
+  ""label"": ""clock tick"",
+  ""confidence"": 0.98
+}"
+5-201664-A-18.wav,18,toilet flush,"{
+  ""summary"": ""A toilet is flushed followed by the sound of water refilling the tank."",
+  ""label_id"": 18,
+  ""label"": ""toilet flush"",
+  ""confidence"": 1.0
+}"
+5-202020-A-18.wav,18,toilet flush,"{
+  ""summary"": ""A toilet is being flushed, creating a sound of rapidly rushing and draining water."",
+  ""label_id"": 18,
+  ""label"": ""toilet flush"",
+  ""confidence"": 0.98
+}"
+5-200461-B-11.wav,11,sea waves,"{
+  ""summary"": ""The sound of ocean waves rhythmically crashing onto a shoreline."",
+  ""label_id"": 11,
+  ""label"": ""sea waves"",
+  ""confidence"": 0.98
+}"
+5-202220-A-21.wav,21,sneezing,"{
+  ""summary"": ""A person is sneezing several times in quick succession."",
+  ""label_id"": 21,
+  ""label"": ""sneezing"",
+  ""confidence"": 0.98
+}"
+5-202795-A-3.wav,3,cow,"{
+  ""summary"": ""A cow is mooing loudly and repeatedly."",
+  ""label_id"": 3,
+  ""label"": ""cow"",
+  ""confidence"": 1.0
+}"
+5-202540-A-18.wav,18,toilet flush,"{
+  ""summary"": ""A toilet is flushed followed by the sound of water filling the tank."",
+  ""label_id"": 18,
+  ""label"": ""toilet flush"",
+  ""confidence"": 1.0
+}"
+5-202898-A-10.wav,10,rain,"{
+  ""summary"": ""A continuous sound of steady rain falling."",
+  ""label_id"": 10,
+  ""label"": ""rain"",
+  ""confidence"": 0.98
+}"
+5-203128-B-0.wav,0,dog,"{
+  ""summary"": ""A dog is barking repeatedly."",
+  ""label_id"": 0,
+  ""label"": ""dog"",
+  ""confidence"": 0.99
+}"
+5-204114-A-29.wav,29,drinking sipping,"{
+  ""summary"": ""The sound consists of rhythmic slurping and swallowing noises from someone drinking."",
+  ""label_id"": 29,
+  ""label"": ""drinking sipping"",
+  ""confidence"": 0.98
+}"
+5-203128-A-0.wav,0,dog,"{
+  ""summary"": ""The audio features a dog barking loudly and repeatedly."",
+  ""label_id"": 0,
+  ""label"": ""dog"",
+  ""confidence"": 0.99
+}"
+5-203739-A-10.wav,10,rain,"{
+  ""summary"": ""Rain is falling steadily."",
+  ""label_id"": 10,
+  ""label"": ""rain"",
+  ""confidence"": 0.95
+}"
+5-204352-A-13.wav,13,crickets,"{
+  ""summary"": ""The audio features the rhythmic and continuous chirping of crickets."",
+  ""label_id"": 13,
+  ""label"": ""crickets"",
+  ""confidence"": 0.98
+}"
+5-204352-B-13.wav,37,clock alarm,"{
+  ""summary"": ""A high-pitched, repeating electronic alarm sound."",
+  ""label_id"": 37,
+  ""label"": ""clock alarm"",
+  ""confidence"": 0.95
+}"
+5-204604-A-24.wav,24,coughing,"{
+  ""summary"": ""A person is coughing repeatedly."",
+  ""label_id"": 24,
+  ""label"": ""coughing"",
+  ""confidence"": 0.98
+}"
+5-205090-A-32.wav,31,mouse click,"{
+  ""summary"": ""Repeated clicking sounds of a computer mouse button."",
+  ""label_id"": 31,
+  ""label"": ""mouse click"",
+  ""confidence"": 0.98
+}"
+5-204741-A-46.wav,46,church bells,"{
+  ""summary"": ""The sound consists of resonant bells tolling rhythmically."",
+  ""label_id"": 46,
+  ""label"": ""church bells"",
+  ""confidence"": 0.99
+}"
+5-205589-B-17.wav,17,pouring water,"{
+  ""summary"": ""The sound features liquid being poured continuously into a container."",
+  ""label_id"": 17,
+  ""label"": ""pouring water"",
+  ""confidence"": 0.95
+}"
+5-205898-A-40.wav,40,helicopter,"{
+  ""summary"": ""A helicopter flies overhead with its distinctive rhythmic rotor thumping."",
+  ""label_id"": 40,
+  ""label"": ""helicopter"",
+  ""confidence"": 0.99
+}"
+5-207781-A-17.wav,17,pouring water,"{
+  ""summary"": ""A liquid is being poured into a container."",
+  ""label_id"": 17,
+  ""label"": ""pouring water"",
+  ""confidence"": 0.98
+}"
+5-207681-A-24.wav,24,coughing,"{
+  ""summary"": ""A person is coughing repeatedly."",
+  ""label_id"": 24,
+  ""label"": ""coughing"",
+  ""confidence"": 1.0
+}"
+5-205589-A-17.wav,17,pouring water,"{
+  ""summary"": ""Water is being poured into a container."",
+  ""label_id"": 17,
+  ""label"": ""pouring water"",
+  ""confidence"": 0.98
+}"
+5-207811-A-35.wav,35,washing machine,"{
+  ""summary"": ""A mechanical device hums and sloshes while operating."",
+  ""label_id"": 35,
+  ""label"": ""washing machine"",
+  ""confidence"": 0.95
+}"
+5-207836-A-29.wav,29,drinking sipping,"{
+  ""summary"": ""The audio consists of loud slurping and swallowing noises indicative of someone drinking."",
+  ""label_id"": 29,
+  ""label"": ""drinking sipping"",
+  ""confidence"": 0.95
+}"
+5-207836-B-29.wav,29,drinking sipping,"{
+  ""summary"": ""A person is sipping and swallowing a beverage."",
+  ""label_id"": 29,
+  ""label"": ""drinking sipping"",
+  ""confidence"": 0.95
+}"
+5-207811-B-35.wav,36,vacuum cleaner,"{
+  ""summary"": ""The audio features the continuous, high-pitched mechanical drone of a vacuum cleaner in operation."",
+  ""label_id"": 36,
+  ""label"": ""vacuum cleaner"",
+  ""confidence"": 0.95
+}"
+5-207836-C-29.wav,29,drinking sipping,"{
+  ""summary"": ""The primary sound is a person audibly sipping and swallowing a liquid."",
+  ""label_id"": 29,
+  ""label"": ""drinking sipping"",
+  ""confidence"": 0.98
+}"
+5-207836-D-29.wav,29,drinking sipping,"{
+  ""summary"": ""A person is gulping a liquid followed by a satisfied exhale."",
+  ""label_id"": 29,
+  ""label"": ""drinking sipping"",
+  ""confidence"": 0.98
+}"
+5-208624-A-38.wav,38,clock tick,"{
+  ""summary"": ""The audio features a steady, rhythmic ticking sound produced by a clock."",
+  ""label_id"": 38,
+  ""label"": ""clock tick"",
+  ""confidence"": 1.0
+}"
+5-208030-A-0.wav,0,dog,"{
+  ""summary"": ""A dog is barking repeatedly."",
+  ""label_id"": 0,
+  ""label"": ""dog"",
+  ""confidence"": 0.98
+}"
+5-208810-B-11.wav,10,rain,"{
+  ""summary"": ""The audio features the steady and continuous sound of falling rain."",
+  ""label_id"": 10,
+  ""label"": ""rain"",
+  ""confidence"": 0.98
+}"
+5-208761-A-24.wav,24,coughing,"{
+  ""summary"": ""A person is coughing repeatedly."",
+  ""label_id"": 24,
+  ""label"": ""coughing"",
+  ""confidence"": 0.98
+}"
+5-209719-A-24.wav,24,coughing,"{
+  ""summary"": ""A person is making a dry coughing sound."",
+  ""label_id"": 24,
+  ""label"": ""coughing"",
+  ""confidence"": 1.0
+}"
+5-208810-A-11.wav,11,sea waves,"{
+  ""summary"": ""The rhythmic sound of ocean waves crashing against the shore."",
+  ""label_id"": 11,
+  ""label"": ""sea waves"",
+  ""confidence"": 0.98
+}"
+5-209989-A-22.wav,22,clapping,"{
+  ""summary"": ""A group of people are clapping their hands in a synchronized manner."",
+  ""label_id"": 22,
+  ""label"": ""clapping"",
+  ""confidence"": 0.95
+}"
+5-209698-A-38.wav,38,clock tick,"{
+  ""summary"": ""A rhythmic, mechanical ticking sound repeating at steady intervals."",
+  ""label_id"": 38,
+  ""label"": ""clock tick"",
+  ""confidence"": 0.98
+}"
+5-209833-A-38.wav,38,clock tick,"{
+  ""summary"": ""A repetitive and steady rhythmic ticking sound produced by a mechanical clock."",
+  ""label_id"": 38,
+  ""label"": ""clock tick"",
+  ""confidence"": 0.98
+}"
+5-209992-A-44.wav,44,engine,"{
+  ""summary"": ""A loud and rhythmic mechanical sound of a heavy engine idling."",
+  ""label_id"": 44,
+  ""label"": ""engine"",
+  ""confidence"": 0.95
+}"
+5-210571-A-38.wav,38,clock tick,"{
+  ""summary"": ""A steady mechanical ticking sound of a clock."",
+  ""label_id"": 38,
+  ""label"": ""clock tick"",
+  ""confidence"": 0.95
+}"
+5-209992-B-44.wav,44,engine,"{
+  ""summary"": ""A continuous, heavy mechanical drone of a running engine."",
+  ""label_id"": 44,
+  ""label"": ""engine"",
+  ""confidence"": 0.95
+}"
+5-211197-A-24.wav,24,coughing,"{
+  ""summary"": ""A person is coughing several times."",
+  ""label_id"": 24,
+  ""label"": ""coughing"",
+  ""confidence"": 0.98
+}"
+5-210540-A-13.wav,13,crickets,"{
+  ""summary"": ""The audio features persistent, rhythmic chirping sounds from crickets."",
+  ""label_id"": 13,
+  ""label"": ""crickets"",
+  ""confidence"": 0.98
+}"
+5-212050-A-27.wav,27,brushing teeth,"{
+  ""summary"": ""The sound of bristles rhythmically scrubbing against teeth."",
+  ""label_id"": 27,
+  ""label"": ""brushing teeth"",
+  ""confidence"": 0.98
+}"
+5-211408-A-37.wav,37,clock alarm,"{
+  ""summary"": ""A persistent, high-pitched rhythmic ringing of a clock alarm."",
+  ""label_id"": 37,
+  ""label"": ""clock alarm"",
+  ""confidence"": 0.98
+}"
+5-210612-A-37.wav,37,clock alarm,"{
+  ""summary"": ""A digital alarm clock emits a sequence of repetitive high-pitched electronic beeps."",
+  ""label_id"": 37,
+  ""label"": ""clock alarm"",
+  ""confidence"": 1.0
+}"
+5-212054-A-36.wav,36,vacuum cleaner,"{
+  ""summary"": ""The continuous, high-pitched mechanical whirring of a vacuum cleaner motor."",
+  ""label_id"": 36,
+  ""label"": ""vacuum cleaner"",
+  ""confidence"": 0.98
+}"
+5-212059-A-36.wav,41,chainsaw,"{
+  ""summary"": ""The loud, high-pitched mechanical buzzing and grinding of a motorized chainsaw."",
+  ""label_id"": 41,
+  ""label"": ""chainsaw"",
+  ""confidence"": 0.98
+}"
+5-212181-A-38.wav,38,clock tick,"{
+  ""summary"": ""A rhythmic ticking sound occurs consistently at one-second intervals."",
+  ""label_id"": 38,
+  ""label"": ""clock tick"",
+  ""confidence"": 0.98
+}"
+5-212454-A-0.wav,0,dog,"{
+  ""summary"": ""A dog is barking repeatedly in an outdoor setting."",
+  ""label_id"": 0,
+  ""label"": ""dog"",
+  ""confidence"": 0.99
+}"
+5-212734-A-17.wav,17,pouring water,"{
+  ""summary"": ""A liquid is being poured into a container."",
+  ""label_id"": 17,
+  ""label"": ""pouring water"",
+  ""confidence"": 0.98
+}"
+5-212730-A-17.wav,17,pouring water,"{
+  ""summary"": ""Water is being poured into a glass or container."",
+  ""label_id"": 17,
+  ""label"": ""pouring water"",
+  ""confidence"": 0.98
+}"
+5-212736-A-17.wav,17,pouring water,"{
+  ""summary"": ""Liquid is being poured steadily into a container."",
+  ""label_id"": 17,
+  ""label"": ""pouring water"",
+  ""confidence"": 0.98
+}"
+5-213077-A-11.wav,11,sea waves,"{
+  ""summary"": ""Rhythmic crashing and rushing of ocean waves on a shore."",
+  ""label_id"": 11,
+  ""label"": ""sea waves"",
+  ""confidence"": 0.98
+}"
+5-213802-A-12.wav,36,vacuum cleaner,"{
+  ""summary"": ""A vacuum cleaner emits a continuous mechanical drone and suction noise."",
+  ""label_id"": 36,
+  ""label"": ""vacuum cleaner"",
+  ""confidence"": 0.98
+}"
+5-213293-A-23.wav,23,breathing,"{
+  ""summary"": ""Heavy and rapid human breathing or hyperventilating."",
+  ""label_id"": 23,
+  ""label"": ""breathing"",
+  ""confidence"": 0.98
+}"
+5-213836-A-9.wav,9,crow,"{
+  ""summary"": ""A crow is cawing loudly and repeatedly in an outdoor environment."",
+  ""label_id"": 9,
+  ""label"": ""crow"",
+  ""confidence"": 0.98
+}"
+5-213836-B-9.wav,9,crow,"{
+  ""summary"": ""The primary sound is a crow cawing loudly in an outdoor environment."",
+  ""label_id"": 9,
+  ""label"": ""crow"",
+  ""confidence"": 0.98
+}"
+5-213855-A-0.wav,0,dog,"{
+  ""summary"": ""A dog is barking loudly and repeatedly."",
+  ""label_id"": 0,
+  ""label"": ""dog"",
+  ""confidence"": 1.0
+}"
+5-213836-D-9.wav,9,crow,"{
+  ""summary"": ""A group of crows is cawing loudly and repetitively."",
+  ""label_id"": 9,
+  ""label"": ""crow"",
+  ""confidence"": 0.98
+}"
+5-213836-C-9.wav,9,crow,"{
+  ""summary"": ""Multiple crows are cawing loudly and repeatedly."",
+  ""label_id"": 9,
+  ""label"": ""crow"",
+  ""confidence"": 0.98
+}"
+5-214759-A-5.wav,5,cat,"{
+  ""summary"": ""A cat is meowing repeatedly."",
+  ""label_id"": 5,
+  ""label"": ""cat"",
+  ""confidence"": 0.99
+}"
+5-214759-B-5.wav,5,cat,"{
+  ""summary"": ""A cat is meowing clearly and repeatedly."",
+  ""label_id"": 5,
+  ""label"": ""cat"",
+  ""confidence"": 0.99
+}"
+5-215005-A-32.wav,31,mouse click,"{
+  ""summary"": ""A repetitive, rhythmic sound of a computer mouse being clicked."",
+  ""label_id"": 31,
+  ""label"": ""mouse click"",
+  ""confidence"": 0.98
+}"
+5-214869-A-9.wav,9,crow,"{
+  ""summary"": ""Multiple crows are cawing loudly in a rhythmic pattern."",
+  ""label_id"": 9,
+  ""label"": ""crow"",
+  ""confidence"": 1.0
+}"
+5-215172-A-13.wav,13,crickets,"{
+  ""summary"": ""The audio features a rhythmic, high-pitched chirping of crickets in a quiet environment."",
+  ""label_id"": 13,
+  ""label"": ""crickets"",
+  ""confidence"": 0.98
+}"
+5-214362-A-17.wav,29,drinking sipping,"{
+  ""summary"": ""Someone pours a liquid into a glass and then drinks it."",
+  ""label_id"": 29,
+  ""label"": ""drinking sipping"",
+  ""confidence"": 0.98
+}"
+5-215179-A-13.wav,13,crickets,"{
+  ""summary"": ""The primary sound is the rhythmic chirping of crickets."",
+  ""label_id"": 13,
+  ""label"": ""crickets"",
+  ""confidence"": 0.95
+}"
+5-215445-A-47.wav,47,airplane,"{
+  ""summary"": ""An airplane is flying overhead with a loud, roaring engine sound."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.98
+}"
+5-215634-A-17.wav,17,pouring water,"{
+  ""summary"": ""Liquid is being poured into a container."",
+  ""label_id"": 17,
+  ""label"": ""pouring water"",
+  ""confidence"": 0.98
+}"
+5-215449-A-47.wav,47,airplane,"{
+  ""summary"": ""The sound is a powerful jet engine roar from a passing airplane."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.95
+}"
+5-215658-A-12.wav,30,door wood knock,"{
+  ""summary"": ""The sound consists of several distinct knocks on a wooden surface."",
+  ""label_id"": 30,
+  ""label"": ""door wood knock"",
+  ""confidence"": 0.98
+}"
+5-215658-B-12.wav,10,rain,"{
+  ""summary"": ""Heavy rain is falling steadily."",
+  ""label_id"": 10,
+  ""label"": ""rain"",
+  ""confidence"": 0.95
+}"
+5-216213-A-13.wav,14,chirping birds,"{
+  ""summary"": ""High-pitched rhythmic chirps of a bird."",
+  ""label_id"": 14,
+  ""label"": ""chirping birds"",
+  ""confidence"": 0.98
+}"
+5-215447-A-47.wav,44,engine,"{
+  ""summary"": ""The audio features the continuous and steady drone of a mechanical engine."",
+  ""label_id"": 44,
+  ""label"": ""engine"",
+  ""confidence"": 0.95
+}"
+5-216214-A-13.wav,13,crickets,"{
+  ""summary"": ""A rhythmic and persistent high-pitched chirping of crickets."",
+  ""label_id"": 13,
+  ""label"": ""crickets"",
+  ""confidence"": 0.98
+}"
+5-216131-A-32.wav,32,keyboard typing,"{
+  ""summary"": ""Rapid mechanical clicking sounds from a computer keyboard being typed on."",
+  ""label_id"": 32,
+  ""label"": ""keyboard typing"",
+  ""confidence"": 0.95
+}"
+5-216216-A-13.wav,13,crickets,"{
+  ""summary"": ""The audio features a rhythmic, high-pitched chirping sound characteristic of crickets."",
+  ""label_id"": 13,
+  ""label"": ""crickets"",
+  ""confidence"": 0.98
+}"
+5-216370-A-41.wav,41,chainsaw,"{
+  ""summary"": ""A loud mechanical engine of a chainsaw revving and cutting."",
+  ""label_id"": 41,
+  ""label"": ""chainsaw"",
+  ""confidence"": 1.0
+}"
+5-217186-A-16.wav,47,airplane,"{
+  ""summary"": ""A continuous, loud roar of a jet engine from an aircraft passing overhead."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.95
+}"
+5-216370-B-41.wav,41,chainsaw,"{
+  ""summary"": ""A chainsaw engine is revving and cutting through wood."",
+  ""label_id"": 41,
+  ""label"": ""chainsaw"",
+  ""confidence"": 1.0
+}"
+5-217158-A-0.wav,0,dog,"{
+  ""summary"": ""A dog is barking repeatedly in an open space."",
+  ""label_id"": 0,
+  ""label"": ""dog"",
+  ""confidence"": 0.99
+}"
+5-216368-A-28.wav,28,snoring,"{
+  ""summary"": ""The audio features deep, rhythmic sounds of a person snoring."",
+  ""label_id"": 28,
+  ""label"": ""snoring"",
+  ""confidence"": 0.98
+}"
+5-217186-B-16.wav,42,siren,"{
+  ""summary"": ""A high-pitched emergency siren wails in repeating cycles."",
+  ""label_id"": 42,
+  ""label"": ""siren"",
+  ""confidence"": 0.98
+}"
+5-217186-C-16.wav,40,helicopter,"{
+  ""summary"": ""The audio features the distinct, rhythmic thumping and whirring sound of helicopter rotor blades."",
+  ""label_id"": 40,
+  ""label"": ""helicopter"",
+  ""confidence"": 0.98
+}"
+5-218196-B-27.wav,27,brushing teeth,"{
+  ""summary"": ""The primary sound is the rhythmic scrubbing of a person brushing their teeth."",
+  ""label_id"": 27,
+  ""label"": ""brushing teeth"",
+  ""confidence"": 0.98
+}"
+5-218196-A-27.wav,27,brushing teeth,"{
+  ""summary"": ""The sound depicts the rhythmic brushing of teeth."",
+  ""label_id"": 27,
+  ""label"": ""brushing teeth"",
+  ""confidence"": 0.98
+}"
+5-218980-A-30.wav,30,door wood knock,"{
+  ""summary"": ""A sequence of sharp knocks on a wooden door."",
+  ""label_id"": 30,
+  ""label"": ""door wood knock"",
+  ""confidence"": 0.98
+}"
+5-218981-A-30.wav,30,door wood knock,"{
+  ""summary"": ""A person is knocking rhythmically on a wooden door."",
+  ""label_id"": 30,
+  ""label"": ""door wood knock"",
+  ""confidence"": 0.99
+}"
+5-218494-A-22.wav,22,clapping,"{
+  ""summary"": ""The audio features the distinct sound of a crowd clapping in applause."",
+  ""label_id"": 22,
+  ""label"": ""clapping"",
+  ""confidence"": 1.0
+}"
+5-219242-B-37.wav,37,clock alarm,"{
+  ""summary"": ""A repetitive high-pitched digital beeping sound consistent with an alarm."",
+  ""label_id"": 37,
+  ""label"": ""clock alarm"",
+  ""confidence"": 1.0
+}"
+5-219044-A-46.wav,46,church bells,"{
+  ""summary"": ""Large church bells are ringing in a rhythmic sequence."",
+  ""label_id"": 46,
+  ""label"": ""church bells"",
+  ""confidence"": 1.0
+}"
+5-219242-A-37.wav,37,clock alarm,"{
+  ""summary"": ""A rhythmic, high-pitched electronic beeping sound from a digital alarm clock."",
+  ""label_id"": 37,
+  ""label"": ""clock alarm"",
+  ""confidence"": 0.99
+}"
+5-219342-A-38.wav,30,door wood knock,"{
+  ""summary"": ""The sound consists of rhythmic, percussive knocks on a wooden surface."",
+  ""label_id"": 30,
+  ""label"": ""door wood knock"",
+  ""confidence"": 1.0
+}"
+5-219379-A-11.wav,11,sea waves,"{
+  ""summary"": ""The rhythmic crashing of ocean waves on a shoreline."",
+  ""label_id"": 11,
+  ""label"": ""sea waves"",
+  ""confidence"": 0.98
+}"
+5-220026-A-21.wav,21,sneezing,"{
+  ""summary"": ""A person is sneezing multiple times."",
+  ""label_id"": 21,
+  ""label"": ""sneezing"",
+  ""confidence"": 0.98
+}"
+5-219379-C-11.wav,11,sea waves,"{
+  ""summary"": ""The primary sound is the rhythmic crashing and rushing of ocean waves."",
+  ""label_id"": 11,
+  ""label"": ""sea waves"",
+  ""confidence"": 0.98
+}"
+5-219379-B-11.wav,11,sea waves,"{
+  ""summary"": ""The primary sound is waves crashing and receding on a beach."",
+  ""label_id"": 11,
+  ""label"": ""sea waves"",
+  ""confidence"": 0.98
+}"
+5-220955-A-40.wav,47,airplane,"{
+  ""summary"": ""The loud roar of a jet engine from an airplane passing overhead."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.95
+}"
+5-220939-A-27.wav,27,brushing teeth,"{
+  ""summary"": ""A rhythmic, abrasive sound of someone brushing their teeth."",
+  ""label_id"": 27,
+  ""label"": ""brushing teeth"",
+  ""confidence"": 0.95
+}"
+5-220027-A-21.wav,21,sneezing,"{
+  ""summary"": ""A person is sneezing twice."",
+  ""label_id"": 21,
+  ""label"": ""sneezing"",
+  ""confidence"": 0.99
+}"
+5-221529-A-39.wav,34,can opening,"{
+  ""summary"": ""A beverage can is opened with a distinct metallic click and a hiss of carbonation."",
+  ""label_id"": 34,
+  ""label"": ""can opening"",
+  ""confidence"": 1.0
+}"
+5-221528-A-39.wav,30,door wood knock,"{
+  ""summary"": ""The primary sound is a series of rhythmic knocks on a wooden door."",
+  ""label_id"": 30,
+  ""label"": ""door wood knock"",
+  ""confidence"": 0.98
+}"
+5-221518-A-21.wav,21,sneezing,"{
+  ""summary"": ""A person is sneezing repeatedly."",
+  ""label_id"": 21,
+  ""label"": ""sneezing"",
+  ""confidence"": 0.98
+}"
+5-221567-A-22.wav,22,clapping,"{
+  ""summary"": ""A crowd of people is clapping together rhythmically."",
+  ""label_id"": 22,
+  ""label"": ""clapping"",
+  ""confidence"": 0.99
+}"
+5-219318-A-31.wav,38,clock tick,"{
+  ""summary"": ""A rhythmic ticking sound occurring at one-second intervals."",
+  ""label_id"": 38,
+  ""label"": ""clock tick"",
+  ""confidence"": 0.95
+}"
+5-221593-A-21.wav,21,sneezing,"{
+  ""summary"": ""The sound features a person sneezing."",
+  ""label_id"": 21,
+  ""label"": ""sneezing"",
+  ""confidence"": 0.98
+}"
+5-221568-A-22.wav,22,clapping,"{
+  ""summary"": ""A group of people is clapping in applause."",
+  ""label_id"": 22,
+  ""label"": ""clapping"",
+  ""confidence"": 0.99
+}"
+5-221878-A-34.wav,34,can opening,"{
+  ""summary"": ""A metal beverage can is being opened."",
+  ""label_id"": 34,
+  ""label"": ""can opening"",
+  ""confidence"": 0.98
+}"
+5-222041-A-9.wav,49,hand saw,"{
+  ""summary"": ""The sound is a rhythmic scraping produced by a manual saw cutting through wood."",
+  ""label_id"": 49,
+  ""label"": ""hand saw"",
+  ""confidence"": 0.95
+}"
+5-222524-A-41.wav,47,airplane,"{
+  ""summary"": ""The continuous loud roar and high-pitched whine of an airplane engine."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.95
+}"
+5-221950-A-22.wav,22,clapping,"{
+  ""summary"": ""Multiple people are rhythmically clapping their hands."",
+  ""label_id"": 22,
+  ""label"": ""clapping"",
+  ""confidence"": 0.98
+}"
+5-223099-B-32.wav,32,keyboard typing,"{
+  ""summary"": ""The sound consists of rapid, rhythmic mechanical clicking consistent with someone typing on a computer keyboard."",
+  ""label_id"": 32,
+  ""label"": ""keyboard typing"",
+  ""confidence"": 0.98
+}"
+5-222894-A-32.wav,32,keyboard typing,"{
+  ""summary"": ""The audio features the rapid and rhythmic sound of keys being pressed on a computer keyboard."",
+  ""label_id"": 32,
+  ""label"": ""keyboard typing"",
+  ""confidence"": 0.99
+}"
+5-223103-A-31.wav,31,mouse click,"{
+  ""summary"": ""The sound consists of repeated, sharp clicks from a computer mouse."",
+  ""label_id"": 31,
+  ""label"": ""mouse click"",
+  ""confidence"": 0.98
+}"
+5-223099-A-32.wav,31,mouse click,"{
+  ""summary"": ""Rapid, repetitive mechanical clicking of a computer mouse."",
+  ""label_id"": 31,
+  ""label"": ""mouse click"",
+  ""confidence"": 0.95
+}"
+5-223317-A-31.wav,31,mouse click,"{
+  ""summary"": ""The audio features the distinct mechanical clicking sound of a computer mouse being pressed multiple times."",
+  ""label_id"": 31,
+  ""label"": ""mouse click"",
+  ""confidence"": 0.98
+}"
+5-223810-A-35.wav,35,washing machine,"{
+  ""summary"": ""The rhythmic mechanical thumping and whirring of a washing machine in operation."",
+  ""label_id"": 35,
+  ""label"": ""washing machine"",
+  ""confidence"": 0.95
+}"
+5-231551-A-36.wav,44,engine,"{
+  ""summary"": ""A vehicle engine starts up and continues to run."",
+  ""label_id"": 44,
+  ""label"": ""engine"",
+  ""confidence"": 0.95
+}"
+5-231762-A-0.wav,0,dog,"{
+  ""summary"": ""A dog is barking loudly and repeatedly."",
+  ""label_id"": 0,
+  ""label"": ""dog"",
+  ""confidence"": 0.99
+}"
+5-232802-A-31.wav,32,keyboard typing,"{
+  ""summary"": ""The sound consists of rapid, rhythmic tapping on a computer keyboard."",
+  ""label_id"": 32,
+  ""label"": ""keyboard typing"",
+  ""confidence"": 0.98
+}"
+5-232816-A-23.wav,23,breathing,"{
+  ""summary"": ""A person is breathing steadily in and out."",
+  ""label_id"": 23,
+  ""label"": ""breathing"",
+  ""confidence"": 0.95
+}"
+5-223176-A-37.wav,37,clock alarm,"{
+  ""summary"": ""A repetitive, high-pitched electronic beeping sound from an alarm."",
+  ""label_id"": 37,
+  ""label"": ""clock alarm"",
+  ""confidence"": 0.95
+}"
+5-232272-A-44.wav,44,engine,"{
+  ""summary"": ""A continuous and steady mechanical thrumming of an engine."",
+  ""label_id"": 44,
+  ""label"": ""engine"",
+  ""confidence"": 0.95
+}"
+5-233160-A-1.wav,1,rooster,"{
+  ""summary"": ""A rooster crows loudly and repeatedly in a clear outdoor environment."",
+  ""label_id"": 1,
+  ""label"": ""rooster"",
+  ""confidence"": 0.99
+}"
+5-233019-A-31.wav,32,keyboard typing,"{
+  ""summary"": ""Rapid mechanical clicking sounds from someone typing on a computer keyboard."",
+  ""label_id"": 32,
+  ""label"": ""keyboard typing"",
+  ""confidence"": 0.98
+}"
+5-233312-A-28.wav,28,snoring,"{
+  ""summary"": ""The sound is of a person snoring loudly and rhythmically."",
+  ""label_id"": 28,
+  ""label"": ""snoring"",
+  ""confidence"": 0.98
+}"
+5-233605-A-39.wav,30,door wood knock,"{
+  ""summary"": ""Three distinct knocks are heard against a wooden door."",
+  ""label_id"": 30,
+  ""label"": ""door wood knock"",
+  ""confidence"": 0.98
+}"
+5-233260-A-23.wav,23,breathing,"{
+  ""summary"": ""A person is breathing heavily and rhythmically."",
+  ""label_id"": 23,
+  ""label"": ""breathing"",
+  ""confidence"": 0.95
+}"
+5-233607-A-39.wav,30,door wood knock,"{
+  ""summary"": ""Two distinct sharp raps are heard against a wooden surface."",
+  ""label_id"": 30,
+  ""label"": ""door wood knock"",
+  ""confidence"": 0.98
+}"
+5-233645-A-37.wav,37,clock alarm,"{
+  ""summary"": ""A digital alarm clock beeps at regular intervals."",
+  ""label_id"": 37,
+  ""label"": ""clock alarm"",
+  ""confidence"": 1.0
+}"
+5-234145-A-28.wav,28,snoring,"{
+  ""summary"": ""The audio features deep, rhythmic snoring sounds from a sleeping individual."",
+  ""label_id"": 28,
+  ""label"": ""snoring"",
+  ""confidence"": 0.98
+}"
+5-233787-A-7.wav,7,insects,"{
+  ""summary"": ""A persistent high-pitched buzzing sound of an insect."",
+  ""label_id"": 7,
+  ""label"": ""insects"",
+  ""confidence"": 0.95
+}"
+5-234247-A-37.wav,37,clock alarm,"{
+  ""summary"": ""A repeating electronic digital alarm beeps steadily."",
+  ""label_id"": 37,
+  ""label"": ""clock alarm"",
+  ""confidence"": 0.99
+}"
+5-234263-A-25.wav,30,door wood knock,"{
+  ""summary"": ""The sound consists of rhythmic, hollow thuds on a wooden surface."",
+  ""label_id"": 30,
+  ""label"": ""door wood knock"",
+  ""confidence"": 0.98
+}"
+5-234879-A-1.wav,1,rooster,"{
+  ""summary"": ""A rooster is crowing loudly."",
+  ""label_id"": 1,
+  ""label"": ""rooster"",
+  ""confidence"": 1.0
+}"
+5-234335-A-23.wav,23,breathing,"{
+  ""summary"": ""A person is breathing audibly and rhythmically."",
+  ""label_id"": 23,
+  ""label"": ""breathing"",
+  ""confidence"": 0.98
+}"
+5-234855-A-25.wav,27,brushing teeth,"{
+  ""summary"": ""The sound features the rhythmic scrubbing of a toothbrush against teeth."",
+  ""label_id"": 27,
+  ""label"": ""brushing teeth"",
+  ""confidence"": 0.95
+}"
+5-234879-B-1.wav,1,rooster,"{
+  ""summary"": ""A rooster crowing loudly in the morning."",
+  ""label_id"": 1,
+  ""label"": ""rooster"",
+  ""confidence"": 0.99
+}"
+5-235593-A-23.wav,23,breathing,"{
+  ""summary"": ""The audio features the sound of a person breathing heavily and rhythmically."",
+  ""label_id"": 23,
+  ""label"": ""breathing"",
+  ""confidence"": 0.95
+}"
+5-235671-A-38.wav,38,clock tick,"{
+  ""summary"": ""A steady, rhythmic ticking of a mechanical clock."",
+  ""label_id"": 38,
+  ""label"": ""clock tick"",
+  ""confidence"": 0.98
+}"
+5-235507-A-44.wav,36,vacuum cleaner,"{
+  ""summary"": ""A continuous mechanical whirring and air suction sound of a vacuum cleaner."",
+  ""label_id"": 36,
+  ""label"": ""vacuum cleaner"",
+  ""confidence"": 0.95
+}"
+5-235893-A-28.wav,28,snoring,"{
+  ""summary"": ""A person is making a rhythmic, deep snoring sound."",
+  ""label_id"": 28,
+  ""label"": ""snoring"",
+  ""confidence"": 0.95
+}"
+5-235644-A-30.wav,30,door wood knock,"{
+  ""summary"": ""The sound consists of three distinct, rhythmic knocks on a wooden surface."",
+  ""label_id"": 30,
+  ""label"": ""door wood knock"",
+  ""confidence"": 0.99
+}"
+5-235874-A-28.wav,28,snoring,"{
+  ""summary"": ""The audio features rhythmic and heavy snoring sounds from a person sleeping."",
+  ""label_id"": 28,
+  ""label"": ""snoring"",
+  ""confidence"": 0.98
+}"
+5-235956-A-47.wav,47,airplane,"{
+  ""summary"": ""A large jet airplane flies overhead with a powerful engine roar."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.95
+}"
+5-236288-A-28.wav,28,snoring,"{
+  ""summary"": ""The primary sound is rhythmic, deep breathing with a slight rattle characteristic of someone snoring."",
+  ""label_id"": 28,
+  ""label"": ""snoring"",
+  ""confidence"": 0.95
+}"
+5-236299-A-34.wav,22,clapping,"{
+  ""summary"": ""The sound consists of distinct, rhythmic hand clapping."",
+  ""label_id"": 22,
+  ""label"": ""clapping"",
+  ""confidence"": 0.98
+}"
+5-237795-A-34.wav,34,can opening,"{
+  ""summary"": ""A metal beverage can is being opened with a distinct pop and fizz."",
+  ""label_id"": 34,
+  ""label"": ""can opening"",
+  ""confidence"": 0.98
+}"
+5-237499-A-4.wav,4,frog,"{
+  ""summary"": ""The audio features a frog croaking in a rhythmic pattern."",
+  ""label_id"": 4,
+  ""label"": ""frog"",
+  ""confidence"": 0.98
+}"
+5-238021-A-35.wav,40,helicopter,"{
+  ""summary"": ""The sound features the rhythmic whirring and mechanical drone of a helicopter in flight."",
+  ""label_id"": 40,
+  ""label"": ""helicopter"",
+  ""confidence"": 0.95
+}"
+5-238492-A-23.wav,23,breathing,"{
+  ""summary"": ""A person is breathing heavily and rhythmically."",
+  ""label_id"": 23,
+  ""label"": ""breathing"",
+  ""confidence"": 0.95
+}"
+5-237315-A-31.wav,31,mouse click,"{
+  ""summary"": ""The audio consists of repeated, sharp mechanical clicking sounds characteristic of a computer mouse."",
+  ""label_id"": 31,
+  ""label"": ""mouse click"",
+  ""confidence"": 0.98
+}"
+5-238926-A-31.wav,31,mouse click,"{
+  ""summary"": ""The audio consists of repeated sharp, mechanical clicking sounds consistent with a computer mouse."",
+  ""label_id"": 31,
+  ""label"": ""mouse click"",
+  ""confidence"": 0.95
+}"
+5-238938-A-27.wav,27,brushing teeth,"{
+  ""summary"": ""A rhythmic scrubbing sound consistent with someone brushing their teeth."",
+  ""label_id"": 27,
+  ""label"": ""brushing teeth"",
+  ""confidence"": 0.95
+}"
+5-241846-A-15.wav,18,toilet flush,"{
+  ""summary"": ""A toilet is being flushed with the distinct sound of rushing water."",
+  ""label_id"": 18,
+  ""label"": ""toilet flush"",
+  ""confidence"": 0.98
+}"
+5-240671-A-44.wav,44,engine,"{
+  ""summary"": ""A mechanical engine is running steadily."",
+  ""label_id"": 44,
+  ""label"": ""engine"",
+  ""confidence"": 0.95
+}"
+5-242490-A-14.wav,14,chirping birds,"{
+  ""summary"": ""Small birds are chirping and singing continuously in a quiet outdoor setting."",
+  ""label_id"": 14,
+  ""label"": ""chirping birds"",
+  ""confidence"": 0.98
+}"
+5-242491-A-14.wav,14,chirping birds,"{
+  ""summary"": ""Multiple birds are singing and chirping melodically in an outdoor setting."",
+  ""label_id"": 14,
+  ""label"": ""chirping birds"",
+  ""confidence"": 0.98
+}"
+5-242492-A-3.wav,3,cow,"{
+  ""summary"": ""A cow is letting out a series of deep, resonant moos."",
+  ""label_id"": 3,
+  ""label"": ""cow"",
+  ""confidence"": 0.99
+}"
+5-242711-A-9.wav,9,crow,"{
+  ""summary"": ""A crow is making loud, repetitive cawing sounds."",
+  ""label_id"": 9,
+  ""label"": ""crow"",
+  ""confidence"": 0.98
+}"
+5-242932-A-26.wav,26,laughing,"{
+  ""summary"": ""The primary sound is a child laughing repeatedly."",
+  ""label_id"": 26,
+  ""label"": ""laughing"",
+  ""confidence"": 0.98
+}"
+5-242932-B-26.wav,26,laughing,"{
+  ""summary"": ""A young child is giggling and laughing repeatedly."",
+  ""label_id"": 26,
+  ""label"": ""laughing"",
+  ""confidence"": 0.99
+}"
+5-243025-A-25.wav,25,footsteps,"{
+  ""summary"": ""Rhythmic thumping and scuffing sounds of someone walking on a hard surface."",
+  ""label_id"": 25,
+  ""label"": ""footsteps"",
+  ""confidence"": 0.98
+}"
+5-243450-A-14.wav,13,crickets,"{
+  ""summary"": ""Consistent rhythmic chirping of crickets in a quiet environment."",
+  ""label_id"": 13,
+  ""label"": ""crickets"",
+  ""confidence"": 0.95
+}"
+5-243459-B-14.wav,14,chirping birds,"{
+  ""summary"": ""Small birds are chirping and tweeting in a natural environment."",
+  ""label_id"": 14,
+  ""label"": ""chirping birds"",
+  ""confidence"": 0.95
+}"
+5-243448-A-14.wav,14,chirping birds,"{
+  ""summary"": ""The audio features a series of high-pitched, melodic bird chirps."",
+  ""label_id"": 14,
+  ""label"": ""chirping birds"",
+  ""confidence"": 0.98
+}"
+5-243459-A-14.wav,14,chirping birds,"{
+  ""summary"": ""The audio features the rhythmic and melodic chirping of birds in a natural environment."",
+  ""label_id"": 14,
+  ""label"": ""chirping birds"",
+  ""confidence"": 0.98
+}"
+5-243449-A-14.wav,13,crickets,"{
+  ""summary"": ""The audio features the rhythmic, high-pitched chirping of crickets."",
+  ""label_id"": 13,
+  ""label"": ""crickets"",
+  ""confidence"": 0.98
+}"
+5-243036-A-29.wav,31,mouse click,"{
+  ""summary"": ""A series of distinct, sharp mechanical clicks produced by a computer mouse."",
+  ""label_id"": 31,
+  ""label"": ""mouse click"",
+  ""confidence"": 0.95
+}"
+5-243635-A-29.wav,32,keyboard typing,"{
+  ""summary"": ""The audio consists of rapid, rhythmic clicking sounds consistent with typing on a computer keyboard."",
+  ""label_id"": 32,
+  ""label"": ""keyboard typing"",
+  ""confidence"": 0.95
+}"
+5-243773-A-44.wav,40,helicopter,"{
+  ""summary"": ""A continuous loud mechanical thrumming sound produced by a helicopter engine and its rotating blades."",
+  ""label_id"": 40,
+  ""label"": ""helicopter"",
+  ""confidence"": 0.95
+}"
+5-243773-B-44.wav,40,helicopter,"{
+  ""summary"": ""The rhythmic thumping of a helicopter's rotor blades spinning."",
+  ""label_id"": 40,
+  ""label"": ""helicopter"",
+  ""confidence"": 0.98
+}"
+5-244310-A-25.wav,25,footsteps,"{
+  ""summary"": ""Rhythmic thumping of feet hitting a hard surface at a walking pace."",
+  ""label_id"": 25,
+  ""label"": ""footsteps"",
+  ""confidence"": 0.98
+}"
+5-243783-A-44.wav,44,engine,"{
+  ""summary"": ""A loud, steady mechanical engine is running continuously."",
+  ""label_id"": 44,
+  ""label"": ""engine"",
+  ""confidence"": 0.95
+}"
+5-244178-A-32.wav,32,keyboard typing,"{
+  ""summary"": ""Rapid and rhythmic mechanical clicking sounds consistent with typing on a keyboard."",
+  ""label_id"": 32,
+  ""label"": ""keyboard typing"",
+  ""confidence"": 0.95
+}"
+5-244315-A-6.wav,6,hen,"{
+  ""summary"": ""Multiple hens are clucking and cackling together in a farm-like environment."",
+  ""label_id"": 6,
+  ""label"": ""hen"",
+  ""confidence"": 0.95
+}"
+5-244315-B-6.wav,2,pig,"{
+  ""summary"": ""The audio features the distinct grunting and snorting sounds of a pig."",
+  ""label_id"": 2,
+  ""label"": ""pig"",
+  ""confidence"": 0.98
+}"
+5-244327-A-34.wav,34,can opening,"{
+  ""summary"": ""A person opens a metal beverage can, characterized by a metallic tab click and the release of carbonation."",
+  ""label_id"": 34,
+  ""label"": ""can opening"",
+  ""confidence"": 0.98
+}"
+5-244459-A-28.wav,28,snoring,"{
+  ""summary"": ""A person is making loud, rhythmic rasping noises while sleeping."",
+  ""label_id"": 28,
+  ""label"": ""snoring"",
+  ""confidence"": 0.99
+}"
+5-244526-A-26.wav,26,laughing,"{
+  ""summary"": ""A person is laughing loudly and continuously."",
+  ""label_id"": 26,
+  ""label"": ""laughing"",
+  ""confidence"": 1.0
+}"
+5-234923-A-32.wav,0,dog,"{
+  ""summary"": ""A dog barking repeatedly in a sequence."",
+  ""label_id"": 0,
+  ""label"": ""dog"",
+  ""confidence"": 0.98
+}"
+5-244315-C-6.wav,6,hen,"{
+  ""summary"": ""A hen is making repetitive clucking sounds."",
+  ""label_id"": 6,
+  ""label"": ""hen"",
+  ""confidence"": 0.98
+}"
+5-244933-A-34.wav,31,mouse click,"{
+  ""summary"": ""The audio features three distinct, sharp clicks characteristic of a computer mouse being pressed."",
+  ""label_id"": 31,
+  ""label"": ""mouse click"",
+  ""confidence"": 0.98
+}"
+5-244651-A-31.wav,38,clock tick,"{
+  ""summary"": ""The audio features a rhythmic and mechanical ticking sound produced by a clock."",
+  ""label_id"": 38,
+  ""label"": ""clock tick"",
+  ""confidence"": 0.95
+}"
+5-248341-A-6.wav,1,rooster,"{
+  ""summary"": ""A rooster is crowing loudly and repeatedly."",
+  ""label_id"": 1,
+  ""label"": ""rooster"",
+  ""confidence"": 0.99
+}"
+5-245040-A-35.wav,35,washing machine,"{
+  ""summary"": ""A washing machine cycles through a wash with mechanical humming and water sloshing."",
+  ""label_id"": 35,
+  ""label"": ""washing machine"",
+  ""confidence"": 0.95
+}"
+5-248341-C-6.wav,0,dog,"{
+  ""summary"": ""A dog is barking loudly and repeatedly."",
+  ""label_id"": 0,
+  ""label"": ""dog"",
+  ""confidence"": 0.99
+}"
+5-249748-A-28.wav,28,snoring,"{
+  ""summary"": ""A person is making rhythmic, raspy breathing sounds characteristic of snoring during sleep."",
+  ""label_id"": 28,
+  ""label"": ""snoring"",
+  ""confidence"": 1.0
+}"
+5-250026-A-30.wav,30,door wood knock,"{
+  ""summary"": ""The audio features several rhythmic knocks on a wooden surface."",
+  ""label_id"": 30,
+  ""label"": ""door wood knock"",
+  ""confidence"": 0.98
+}"
+5-248341-B-6.wav,6,hen,"{
+  ""summary"": ""A hen is making repeated clucking sounds."",
+  ""label_id"": 6,
+  ""label"": ""hen"",
+  ""confidence"": 0.98
+}"
+5-249937-A-22.wav,22,clapping,"{
+  ""summary"": ""A large crowd of people is applauding and clapping."",
+  ""label_id"": 22,
+  ""label"": ""clapping"",
+  ""confidence"": 0.99
+}"
+5-250026-B-30.wav,32,keyboard typing,"{
+  ""summary"": ""Rapid mechanical clicking sounds of a computer keyboard being used."",
+  ""label_id"": 32,
+  ""label"": ""keyboard typing"",
+  ""confidence"": 0.98
+}"
+5-250753-A-34.wav,34,can opening,"{
+  ""summary"": ""A beverage can is being opened, followed by the sound of carbonated fizz."",
+  ""label_id"": 34,
+  ""label"": ""can opening"",
+  ""confidence"": 0.95
+}"
+5-250258-A-49.wav,49,hand saw,"{
+  ""summary"": ""The sound features the rhythmic, high-pitched scraping of a manual hand saw cutting through wood."",
+  ""label_id"": 49,
+  ""label"": ""hand saw"",
+  ""confidence"": 0.98
+}"
+5-250629-A-37.wav,37,clock alarm,"{
+  ""summary"": ""A digital alarm clock emits a repeating series of high-pitched beeps."",
+  ""label_id"": 37,
+  ""label"": ""clock alarm"",
+  ""confidence"": 0.99
+}"
+5-251426-B-30.wav,30,door wood knock,"{
+  ""summary"": ""The sound of a person knocking rhythmically on a wooden door."",
+  ""label_id"": 30,
+  ""label"": ""door wood knock"",
+  ""confidence"": 1.0
+}"
+5-251426-A-30.wav,30,door wood knock,"{
+  ""summary"": ""A series of rhythmic knocks on a wooden surface."",
+  ""label_id"": 30,
+  ""label"": ""door wood knock"",
+  ""confidence"": 0.99
+}"
+5-251489-A-24.wav,24,coughing,"{
+  ""summary"": ""A person is coughing twice in a quiet environment."",
+  ""label_id"": 24,
+  ""label"": ""coughing"",
+  ""confidence"": 1.0
+}"
+5-251957-A-47.wav,47,airplane,"{
+  ""summary"": ""An airplane engine roars loudly as it flies overhead."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.99
+}"
+5-251963-A-47.wav,47,airplane,"{
+  ""summary"": ""A jet engine roars as an airplane flies rapidly overhead."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.99
+}"
+5-252248-A-34.wav,31,mouse click,"{
+  ""summary"": ""Rapid double-clicking sounds from a computer mouse."",
+  ""label_id"": 31,
+  ""label"": ""mouse click"",
+  ""confidence"": 0.95
+}"
+5-253085-A-3.wav,3,cow,"{
+  ""summary"": ""The audio features the distinct low-pitched mooing of a cow."",
+  ""label_id"": 3,
+  ""label"": ""cow"",
+  ""confidence"": 0.99
+}"
+5-251962-A-47.wav,47,airplane,"{
+  ""summary"": ""An airplane engine roars as it flies past at a low altitude."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.98
+}"
+5-251971-A-47.wav,47,airplane,"{
+  ""summary"": ""A large airplane flies overhead with a loud jet engine roar."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.95
+}"
+5-253094-A-49.wav,49,hand saw,"{
+  ""summary"": ""The rhythmic sound of a manual hand saw cutting through wood."",
+  ""label_id"": 49,
+  ""label"": ""hand saw"",
+  ""confidence"": 0.98
+}"
+5-253085-B-3.wav,3,cow,"{
+  ""summary"": ""A cow is letting out a loud, resonating moo."",
+  ""label_id"": 3,
+  ""label"": ""cow"",
+  ""confidence"": 1.0
+}"
+5-253094-B-49.wav,27,brushing teeth,"{
+  ""summary"": ""The audio features the rhythmic, abrasive sound of someone brushing their teeth."",
+  ""label_id"": 27,
+  ""label"": ""brushing teeth"",
+  ""confidence"": 0.95
+}"
+5-253094-C-49.wav,49,hand saw,"{
+  ""summary"": ""The sound of a hand saw cutting through material in a rhythmic back-and-forth motion."",
+  ""label_id"": 49,
+  ""label"": ""hand saw"",
+  ""confidence"": 0.98
+}"
+5-253094-D-49.wav,49,hand saw,"{
+  ""summary"": ""The audio features the rhythmic, manual scraping sound of a hand saw cutting through material."",
+  ""label_id"": 49,
+  ""label"": ""hand saw"",
+  ""confidence"": 0.98
+}"
+5-253101-C-49.wav,49,hand saw,"{
+  ""summary"": ""The audio features the rhythmic, scraping sound of a manual hand saw cutting through wood."",
+  ""label_id"": 49,
+  ""label"": ""hand saw"",
+  ""confidence"": 0.98
+}"
+5-253101-A-49.wav,49,hand saw,"{
+  ""summary"": ""A rhythmic back-and-forth scraping sound of a hand saw cutting through wood."",
+  ""label_id"": 49,
+  ""label"": ""hand saw"",
+  ""confidence"": 0.98
+}"
+5-254160-A-22.wav,22,clapping,"{
+  ""summary"": ""A group of people are clapping their hands in applause."",
+  ""label_id"": 22,
+  ""label"": ""clapping"",
+  ""confidence"": 0.98
+}"
+5-253534-A-26.wav,26,laughing,"{
+  ""summary"": ""A person is laughing loudly and energetically."",
+  ""label_id"": 26,
+  ""label"": ""laughing"",
+  ""confidence"": 0.98
+}"
+5-253101-B-49.wav,49,hand saw,"{
+  ""summary"": ""The audio features a rhythmic back-and-forth scraping sound characteristic of manual sawing."",
+  ""label_id"": 49,
+  ""label"": ""hand saw"",
+  ""confidence"": 0.98
+}"
+5-254832-A-15.wav,38,clock tick,"{
+  ""summary"": ""The audio features a rhythmic and steady ticking sound produced by a clock."",
+  ""label_id"": 38,
+  ""label"": ""clock tick"",
+  ""confidence"": 0.98
+}"
+5-256452-A-5.wav,5,cat,"{
+  ""summary"": ""A domestic cat is making distinct meowing sounds."",
+  ""label_id"": 5,
+  ""label"": ""cat"",
+  ""confidence"": 0.99
+}"
+5-256512-A-30.wav,30,door wood knock,"{
+  ""summary"": ""The sound consists of distinct, rhythmic knocks on a wooden surface."",
+  ""label_id"": 30,
+  ""label"": ""door wood knock"",
+  ""confidence"": 1.0
+}"
+5-257839-A-14.wav,14,chirping birds,"{
+  ""summary"": ""Multiple birds are chirping and singing rhythmically in a natural outdoor setting."",
+  ""label_id"": 14,
+  ""label"": ""chirping birds"",
+  ""confidence"": 0.99
+}"
+5-254832-B-15.wav,15,water drops,"{
+  ""summary"": ""The sound consists of distinct, rhythmic droplets falling into water."",
+  ""label_id"": 15,
+  ""label"": ""water drops"",
+  ""confidence"": 0.98
+}"
+5-257642-A-39.wav,39,glass breaking,"{
+  ""summary"": ""The sound of glass objects shattering and breaking into pieces."",
+  ""label_id"": 39,
+  ""label"": ""glass breaking"",
+  ""confidence"": 0.99
+}"
+5-257349-A-15.wav,32,keyboard typing,"{
+  ""summary"": ""Rapid mechanical clicking of computer keys being pressed."",
+  ""label_id"": 32,
+  ""label"": ""keyboard typing"",
+  ""confidence"": 0.98
+}"
+5-259180-A-15.wav,38,clock tick,"{
+  ""summary"": ""The audio features a rhythmic and steady mechanical ticking sound."",
+  ""label_id"": 38,
+  ""label"": ""clock tick"",
+  ""confidence"": 0.98
+}"
+5-259514-A-26.wav,26,laughing,"{
+  ""summary"": ""A person is laughing heartily."",
+  ""label_id"": 26,
+  ""label"": ""laughing"",
+  ""confidence"": 1.0
+}"
+5-259169-A-5.wav,5,cat,"{
+  ""summary"": ""The primary sound is a cat meowing repeatedly."",
+  ""label_id"": 5,
+  ""label"": ""cat"",
+  ""confidence"": 0.98
+}"
+5-260011-A-34.wav,34,can opening,"{
+  ""summary"": ""The sound features the distinct mechanical click and snap of a beverage can being opened."",
+  ""label_id"": 34,
+  ""label"": ""can opening"",
+  ""confidence"": 0.98
+}"
+5-260164-A-23.wav,42,siren,"{
+  ""summary"": ""A loud, oscillating emergency siren wails repeatedly."",
+  ""label_id"": 42,
+  ""label"": ""siren"",
+  ""confidence"": 1.0
+}"
+5-259640-A-29.wav,29,drinking sipping,"{
+  ""summary"": ""A person is gulping and swallowing a liquid."",
+  ""label_id"": 29,
+  ""label"": ""drinking sipping"",
+  ""confidence"": 0.95
+}"
+5-260432-A-39.wav,34,can opening,"{
+  ""summary"": ""A pressurized can is opened with a characteristic pop and hiss sound."",
+  ""label_id"": 34,
+  ""label"": ""can opening"",
+  ""confidence"": 0.98
+}"
+5-260434-A-39.wav,39,glass breaking,"{
+  ""summary"": ""The sound of a glass object shattering into several fragments."",
+  ""label_id"": 39,
+  ""label"": ""glass breaking"",
+  ""confidence"": 0.99
+}"
+5-260433-A-39.wav,31,mouse click,"{
+  ""summary"": ""The audio consists of rapid, rhythmic clicking sounds produced by a computer mouse."",
+  ""label_id"": 31,
+  ""label"": ""mouse click"",
+  ""confidence"": 0.98
+}"
+5-261433-A-15.wav,15,water drops,"{
+  ""summary"": ""Rhythmic water droplets are falling into a pool of liquid."",
+  ""label_id"": 15,
+  ""label"": ""water drops"",
+  ""confidence"": 0.95
+}"
+5-261439-A-15.wav,24,coughing,"{
+  ""summary"": ""A person is coughing repeatedly."",
+  ""label_id"": 24,
+  ""label"": ""coughing"",
+  ""confidence"": 0.98
+}"
+5-261325-A-9.wav,9,crow,"{
+  ""summary"": ""Multiple crows are cawing loudly in a rhythmic pattern."",
+  ""label_id"": 9,
+  ""label"": ""crow"",
+  ""confidence"": 0.98
+}"
+5-262641-A-15.wav,32,keyboard typing,"{
+  ""summary"": ""Rapid mechanical key presses on a computer keyboard."",
+  ""label_id"": 32,
+  ""label"": ""keyboard typing"",
+  ""confidence"": 0.98
+}"
+5-261464-A-23.wav,23,breathing,"{
+  ""summary"": ""Heavy and rhythmic human breathing is audible throughout the clip."",
+  ""label_id"": 23,
+  ""label"": ""breathing"",
+  ""confidence"": 0.98
+}"
+5-260875-A-35.wav,47,airplane,"{
+  ""summary"": ""The audio features a loud, steady roar of an airplane engine."",
+  ""label_id"": 47,
+  ""label"": ""airplane"",
+  ""confidence"": 0.95
+}"
+5-263490-A-25.wav,25,footsteps,"{
+  ""summary"": ""Rhythmic thumping sounds of someone walking on a hard surface."",
+  ""label_id"": 25,
+  ""label"": ""footsteps"",
+  ""confidence"": 0.95
+}"
+5-262957-A-22.wav,22,clapping,"{
+  ""summary"": ""The audio consists of rhythmic and continuous hand clapping from a group of people."",
+  ""label_id"": 22,
+  ""label"": ""clapping"",
+  ""confidence"": 0.98
+}"
+5-263775-A-26.wav,24,coughing,"{
+  ""summary"": ""A person is coughing several times."",
+  ""label_id"": 24,
+  ""label"": ""coughing"",
+  ""confidence"": 0.98
+}"
+5-263491-A-25.wav,25,footsteps,"{
+  ""summary"": ""Rhythmic crunching sounds consistent with a person walking on a crisp surface."",
+  ""label_id"": 25,
+  ""label"": ""footsteps"",
+  ""confidence"": 0.98
+}"
+5-263501-A-25.wav,25,footsteps,"{
+  ""summary"": ""The sound consists of rhythmic crunching footsteps walking on a textured surface."",
+  ""label_id"": 25,
+  ""label"": ""footsteps"",
+  ""confidence"": 0.98
+}"
+5-263831-B-6.wav,6,hen,"{
+  ""summary"": ""A hen is clucking repeatedly in a rhythmic pattern."",
+  ""label_id"": 6,
+  ""label"": ""hen"",
+  ""confidence"": 1.0
+}"
+5-263775-B-26.wav,26,laughing,"{
+  ""summary"": ""A person is laughing hysterically and loudly."",
+  ""label_id"": 26,
+  ""label"": ""laughing"",
+  ""confidence"": 1.0
+}"
+5-263902-A-36.wav,36,vacuum cleaner,"{
+  ""summary"": ""The audio features a continuous high-pitched whirring and suction sound of a vacuum cleaner."",
+  ""label_id"": 36,
+  ""label"": ""vacuum cleaner"",
+  ""confidence"": 0.95
+}"
+5-61635-A-8.wav,8,sheep,"{
+  ""summary"": ""Multiple sheep are bleating loudly in a sequence."",
+  ""label_id"": 8,
+  ""label"": ""sheep"",
+  ""confidence"": 0.99
+}"
+5-263831-A-6.wav,6,hen,"{
+  ""summary"": ""A hen is clucking loudly and repetitively."",
+  ""label_id"": 6,
+  ""label"": ""hen"",
+  ""confidence"": 0.98
+}"
+5-51149-A-25.wav,25,footsteps,"{
+  ""summary"": ""Rhythmic heavy footsteps are heard on a hard surface."",
+  ""label_id"": 25,
+  ""label"": ""footsteps"",
+  ""confidence"": 0.98
+}"
+5-9032-A-0.wav,0,dog,"{
+  ""summary"": ""A small dog is barking repeatedly in a high-pitched tone."",
+  ""label_id"": 0,
+  ""label"": ""dog"",
+  ""confidence"": 0.98
+}"

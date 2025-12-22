@@ -1,0 +1,109 @@
+{
+  "run_id": "run_20251221_003516",
+  "results_dir": "outputs/results/run_20251221_003516",
+  "steps": [
+    {
+      "name": "train_cnn_resnet",
+      "command": [
+        "python",
+        "scripts/models/train_cnn.py",
+        "--frame-length",
+        "1024",
+        "--hop-length",
+        "512",
+        "--n-mels",
+        "40",
+        "--epochs",
+        "30",
+        "--batch-size",
+        "32",
+        "--lr",
+        "0.001",
+        "--output",
+        "outputs/results/run_20251221_003516/models/cnn.pt",
+        "--history",
+        "outputs/results/run_20251221_003516/history/train_cnn.csv",
+        "--feature-cache",
+        "outputs/results/run_20251221_003516/features"
+      ],
+      "log": "outputs/results/run_20251221_003516/logs/train_cnn_resnet.log",
+      "return_code": 0,
+      "skipped": true
+    },
+    {
+      "name": "classification_grid_resnet",
+      "command": [
+        "python",
+        "scripts/tasks/run_classification_grid.py",
+        "--frame-lengths",
+        "512",
+        "1024",
+        "2048",
+        "--hop-lengths",
+        "256",
+        "512",
+        "1024",
+        "--epochs",
+        "30",
+        "--batch-size",
+        "64",
+        "--num-workers",
+        "4",
+        "--output",
+        "outputs/results/run_20251221_003516/retrieval/classification_grid.csv",
+        "--history-dir",
+        "outputs/results/run_20251221_003516/history/classification_grid",
+        "--feature-cache",
+        "outputs/results/run_20251221_003516/features"
+      ],
+      "log": "outputs/results/run_20251221_003516/logs/classification_grid_resnet.log",
+      "return_code": 0
+    },
+    {
+      "name": "cnn_infer",
+      "command": [
+        "python",
+        "scripts/models/infer_cnn.py",
+        "--checkpoint",
+        "outputs/results/run_20251221_003516/models/cnn.pt",
+        "--output",
+        "outputs/results/run_20251221_003516/predictions/cnn_fold5.csv",
+        "--feature-cache",
+        "outputs/results/run_20251221_003516/features"
+      ],
+      "log": "outputs/results/run_20251221_003516/logs/cnn_infer.log",
+      "return_code": 0,
+      "skipped": true
+    },
+    {
+      "name": "retrieval_ml_cnn",
+      "command": [
+        "python",
+        "scripts/tasks/run_retrieval_ml.py",
+        "--model-type",
+        "cnn",
+        "--model",
+        "outputs/results/run_20251221_003516/models/cnn.pt",
+        "--feature-cache",
+        "outputs/results/run_20251221_003516/features"
+      ],
+      "log": "outputs/results/run_20251221_003516/logs/retrieval_ml_cnn.log",
+      "return_code": 0,
+      "skipped": true
+    },
+    {
+      "name": "plot_history",
+      "command": [
+        "python",
+        "scripts/tools/plot_history.py",
+        "--history",
+        "outputs/results/run_20251221_003516/history/train_cnn.csv",
+        "--output",
+        "outputs/results/run_20251221_003516/plots/cnn_history.png"
+      ],
+      "log": "outputs/results/run_20251221_003516/logs/plot_history.log",
+      "return_code": 0,
+      "skipped": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+filename,target,target_label,predicted_target,predicted_label,true_target,true_label
+5-160614-E-48.wav,48,fireworks,25,footsteps,48,fireworks
+5-160614-F-48.wav,48,fireworks,25,footsteps,48,fireworks
+5-173568-A-33.wav,33,door wood creaks,5,cat,33,door wood creaks
+5-177957-A-40.wav,40,helicopter,35,washing machine,40,helicopter
+5-177957-B-40.wav,40,helicopter,35,washing machine,40,helicopter
+5-177957-E-40.wav,40,helicopter,47,airplane,40,helicopter
+5-179496-A-16.wav,16,wind,45,train,16,wind
+5-180229-A-27.wav,27,brushing teeth,49,hand saw,27,brushing teeth
+5-191131-A-40.wav,40,helicopter,47,airplane,40,helicopter
+5-202795-A-3.wav,3,cow,28,snoring,3,cow
+5-205090-A-32.wav,32,keyboard typing,31,mouse click,32,keyboard typing
+5-209719-A-24.wav,24,coughing,39,glass breaking,24,coughing
+5-213802-A-12.wav,12,crackling fire,13,crickets,12,crackling fire
+5-218981-A-30.wav,30,door wood knock,25,footsteps,30,door wood knock
+5-220939-A-27.wav,27,brushing teeth,49,hand saw,27,brushing teeth
+5-220955-A-40.wav,40,helicopter,47,airplane,40,helicopter
+5-232816-A-23.wav,23,breathing,28,snoring,23,breathing
+5-234263-A-25.wav,25,footsteps,30,door wood knock,25,footsteps
+5-250753-A-34.wav,34,can opening,7,insects,34,can opening
+5-261439-A-15.wav,15,water drops,13,crickets,15,water drops

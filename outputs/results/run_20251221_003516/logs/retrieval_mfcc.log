@@ -1,0 +1,9 @@
+frame 512 hop 256 -> top10 0.6500 top20 0.7775
+frame 512 hop 512 -> top10 0.6475 top20 0.7800
+frame 512 hop 1024 -> top10 0.6450 top20 0.7775
+frame 1024 hop 256 -> top10 0.6575 top20 0.7925
+frame 1024 hop 512 -> top10 0.6525 top20 0.7900
+frame 1024 hop 1024 -> top10 0.6525 top20 0.7900
+frame 2048 hop 256 -> top10 0.6775 top20 0.7950
+frame 2048 hop 512 -> top10 0.6775 top20 0.7950
+frame 2048 hop 1024 -> top10 0.6625 top20 0.7950

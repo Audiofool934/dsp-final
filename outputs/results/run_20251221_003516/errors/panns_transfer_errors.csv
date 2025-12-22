@@ -1,0 +1,39 @@
+filename,target,target_label,predicted_target,predicted_label,true_target,true_label
+5-103416-A-2.wav,2,pig,26,laughing,2,pig
+5-103418-A-2.wav,2,pig,0,dog,2,pig
+5-103420-A-2.wav,2,pig,24,coughing,2,pig
+5-103422-A-2.wav,2,pig,0,dog,2,pig
+5-117250-A-2.wav,2,pig,29,drinking sipping,2,pig
+5-117773-A-16.wav,16,wind,47,airplane,16,wind
+5-141683-A-35.wav,35,washing machine,40,helicopter,35,washing machine
+5-150409-A-42.wav,42,siren,45,train,42,siren
+5-156026-B-4.wav,4,frog,9,crow,4,frog
+5-156026-D-4.wav,4,frog,9,crow,4,frog
+5-156999-D-19.wav,19,thunderstorm,16,wind,19,thunderstorm
+5-156999-E-19.wav,19,thunderstorm,48,fireworks,19,thunderstorm
+5-160614-F-48.wav,48,fireworks,25,footsteps,48,fireworks
+5-177957-A-40.wav,40,helicopter,35,washing machine,40,helicopter
+5-177957-B-40.wav,40,helicopter,13,crickets,40,helicopter
+5-177957-C-40.wav,40,helicopter,13,crickets,40,helicopter
+5-180229-A-27.wav,27,brushing teeth,49,hand saw,27,brushing teeth
+5-186924-A-12.wav,12,crackling fire,10,rain,12,crackling fire
+5-191131-A-40.wav,40,helicopter,47,airplane,40,helicopter
+5-205090-A-32.wav,32,keyboard typing,31,mouse click,32,keyboard typing
+5-207836-D-29.wav,29,drinking sipping,15,water drops,29,drinking sipping
+5-209992-A-44.wav,44,engine,35,washing machine,44,engine
+5-209992-B-44.wav,44,engine,35,washing machine,44,engine
+5-213802-A-12.wav,12,crackling fire,35,washing machine,12,crackling fire
+5-215445-A-47.wav,47,airplane,16,wind,47,airplane
+5-216213-A-13.wav,13,crickets,4,frog,13,crickets
+5-220955-A-40.wav,40,helicopter,16,wind,40,helicopter
+5-222524-A-41.wav,41,chainsaw,47,airplane,41,chainsaw
+5-232816-A-23.wav,23,breathing,16,wind,23,breathing
+5-233019-A-31.wav,31,mouse click,12,crackling fire,31,mouse click
+5-233605-A-39.wav,39,glass breaking,34,can opening,39,glass breaking
+5-234263-A-25.wav,25,footsteps,30,door wood knock,25,footsteps
+5-241846-A-15.wav,15,water drops,17,pouring water,15,water drops
+5-242932-B-26.wav,26,laughing,20,crying baby,26,laughing
+5-243449-A-14.wav,14,chirping birds,13,crickets,14,chirping birds
+5-249748-A-28.wav,28,snoring,29,drinking sipping,28,snoring
+5-251962-A-47.wav,47,airplane,16,wind,47,airplane
+5-257349-A-15.wav,15,water drops,29,drinking sipping,15,water drops

@@ -54,6 +54,22 @@ export PYTHONPATH=.
 
 Full runbook with all experiments: `reports/experiment_plan.md`
 
+## Run All Experiments (Overnight)
+This will run all steps in order and write logs/results under `outputs/results/<run_id>`:
+
+```
+python scripts/tools/run_all_experiments.py --precompute-workers 1
+```
+
+Use `--skip-*` flags to disable heavy steps.
+For Gemini prompt variants, use `--gemini-prompt-style guided` to save predictions to a separate file.
+
+To append new results into an existing run:
+
+```
+python scripts/tools/continue_run.py --run-id run_YYYYMMDD_HHMMSS
+```
+
 ## Precompute DSP Features (Cache)
 Precompute MFCC and log-mel features and write a manifest:
 
@@ -75,7 +91,7 @@ python scripts/tasks/run_retrieval.py \
 Results saved to `outputs/retrieval_mfcc.csv`.
 
 ## Classification
-Train a CNN on log-mel features:
+Train a ResNet-style CNN on log-mel features:
 
 ```
 python scripts/models/train_cnn.py \
@@ -86,6 +102,14 @@ python scripts/models/train_cnn.py \
 
 Model saved to `outputs/models/cnn.pt`.
 Training history saved to `outputs/history/train_cnn.csv`.
+
+## Classification Hyperparameter Sweep
+Compare frame/hop settings on the same ResNet model:
+
+```
+python scripts/tasks/run_classification_grid.py --frame-lengths 512 1024 2048 --hop-lengths 256 512 1024
+# Use --epochs/--batch-size/--num-workers for a faster grid; defaults are in configs/experiments.yaml
+```
 
 ## CNN Inference
 Run inference on fold 5 and save predictions:
@@ -147,13 +171,28 @@ python scripts/tasks/eval_llm_baseline.py
 Generate predictions with Gemini (requires `GOOGLE_API_KEY` or `GEMINI_API_KEY`):
 
 ```
-python scripts/models/eval_gemini_zeroshot.py --model gemini-3-flash-preview --sleep 0.5
+python scripts/models/eval_gemini_zeroshot.py --model gemini-3-flash-preview --sleep 0
 ```
+
+Guided prompt (single call, summary + label; uses a separate output file when default path is used):
+
+```
+python scripts/models/eval_gemini_zeroshot.py --model gemini-3-flash-preview --sleep 0 --prompt-style guided
+```
+
+You can increase parallel requests with `--workers` (e.g., `--workers 8`).
+Use `--log-every 10` to emit progress lines into logs while running under the experiment runner.
 
 Then evaluate:
 
 ```
 python scripts/tasks/eval_llm_baseline.py --predictions outputs/llm_predictions.csv
+```
+
+For guided runs with the default output path:
+
+```
+python scripts/tasks/eval_llm_baseline.py --predictions outputs/llm_predictions_guided.csv
 ```
 
 ## CLAP Zero-Shot Baseline
@@ -165,6 +204,16 @@ python scripts/models/eval_clap_zeroshot.py --model laion/clap-htsat-unfused
 
 Results saved to `outputs/clap_zeroshot.csv`.
 
+## CLAP Transfer Baseline
+Extract CLAP audio embeddings and train a linear classifier:
+
+```
+python scripts/models/eval_clap_transfer.py
+```
+
+Training history saved to `outputs/history/clap_transfer.csv`.
+Best linear head saved to `outputs/models/clap_transfer.pt`.
+
 ## PANNs Transfer Baseline
 Extract PANNs embeddings and train a linear classifier on folds 1-4:
 
@@ -173,6 +222,7 @@ python scripts/models/eval_panns_transfer.py
 ```
 
 Training history saved to `outputs/history/panns_transfer.csv`.
+Best linear head saved to `outputs/models/panns_transfer.pt`.
 
 ## AST Transfer Baseline
 Extract AST embeddings and train a linear classifier on folds 1-4:
@@ -182,6 +232,7 @@ python scripts/models/eval_ast_transfer.py
 ```
 
 Training history saved to `outputs/history/ast_transfer.csv`.
+Best linear head saved to `outputs/models/ast_transfer.pt`.
 
 ## Report
 Fill `reports/report_template.md` with experiment settings, curves, and comparisons.

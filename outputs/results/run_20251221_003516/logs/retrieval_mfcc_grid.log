@@ -1,0 +1,17 @@
+$ /root/miniconda3/envs/myconda/bin/python scripts/tasks/run_retrieval.py --data-root data/ESC-50-master --sample-rate 44100 --frame-lengths 512 1024 2048 4096 --hop-lengths 256 512 1024 2048 --n-mels 40 --n-mfcc 13 --feature-cache outputs/results/run_20251221_003516/features --output outputs/results/run_20251221_003516/retrieval/retrieval_mfcc.csv
+frame 512 hop 256 -> top10 0.6500 top20 0.7775
+frame 512 hop 512 -> top10 0.6475 top20 0.7800
+frame 512 hop 1024 -> top10 0.6450 top20 0.7775
+frame 512 hop 2048 -> top10 0.6525 top20 0.7725
+frame 1024 hop 256 -> top10 0.6575 top20 0.7925
+frame 1024 hop 512 -> top10 0.6525 top20 0.7900
+frame 1024 hop 1024 -> top10 0.6525 top20 0.7900
+frame 1024 hop 2048 -> top10 0.6400 top20 0.7875
+frame 2048 hop 256 -> top10 0.6775 top20 0.7950
+frame 2048 hop 512 -> top10 0.6775 top20 0.7950
+frame 2048 hop 1024 -> top10 0.6625 top20 0.7950
+frame 2048 hop 2048 -> top10 0.6600 top20 0.7925
+frame 4096 hop 256 -> top10 0.6575 top20 0.7800
+frame 4096 hop 512 -> top10 0.6575 top20 0.7775
+frame 4096 hop 1024 -> top10 0.6625 top20 0.7775
+frame 4096 hop 2048 -> top10 0.6600 top20 0.7750

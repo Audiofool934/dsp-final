@@ -1,0 +1,4 @@
+/mnt/dsp/src/models/clap.py:101: FutureWarning: `audios` is deprecated and will be removed in version v4.59.0 for `ClapProcessor.__call__`. Use `audio` instead.
+  inputs = processor(audios=audios, sampling_rate=sample_rate, return_tensors="pt", padding=True)
+top10 precision: 0.9950
+top20 precision: 1.0000

@@ -1,0 +1,4 @@
+Checkpoint path: /root/panns_data/Cnn14_mAP=0.431.pth
+GPU number: 1
+top10 precision: 0.9775
+top20 precision: 0.9800

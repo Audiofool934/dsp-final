@@ -35,6 +35,7 @@
 - PANNs transfer accuracy and analysis
 - Gemini zero-shot accuracy and analysis
 - AST transfer accuracy and analysis
+- CLAP transfer accuracy and analysis
 
 ## 8. Conclusions
 - Key findings

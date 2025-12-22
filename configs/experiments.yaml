@@ -8,6 +8,11 @@ classification:
   frame_length: 1024
   hop_length: 512
   n_mels: 40
-  epochs: 30
+  epochs: 50
   batch_size: 32
   lr: 0.001
+
+classification_grid:
+  epochs: 50
+  batch_size: 32
+  num_workers: 4

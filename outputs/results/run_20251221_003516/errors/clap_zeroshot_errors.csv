@@ -1,0 +1,35 @@
+filename,target,predicted_target,predicted_label,score,true_target,true_label
+5-103416-A-2.wav,2,1,Sound of rooster,0.34086599946022034,2,pig
+5-103420-A-2.wav,2,3,Sound of cow,0.29295799136161804,2,pig
+5-117773-A-16.wav,16,47,Sound of airplane,0.6212863922119141,16,wind
+5-141683-A-35.wav,35,47,Sound of airplane,0.5657492280006409,35,washing machine
+5-156999-C-19.wav,19,48,Sound of fireworks,0.6814953684806824,19,thunderstorm
+5-157204-B-16.wav,16,45,Sound of train,0.48758798837661743,16,wind
+5-177957-A-40.wav,40,44,Sound of engine,0.41649743914604187,40,helicopter
+5-179496-A-16.wav,16,45,Sound of train,0.7976335287094116,16,wind
+5-179496-B-16.wav,16,45,Sound of train,0.43980497121810913,16,wind
+5-191131-A-40.wav,40,47,Sound of airplane,0.7794135212898254,40,helicopter
+5-194932-A-7.wav,7,3,Sound of cow,0.26719215512275696,7,insects
+5-195518-A-7.wav,7,3,Sound of cow,0.23109377920627594,7,insects
+5-198278-A-7.wav,7,47,Sound of airplane,0.3611451983451843,7,insects
+5-198278-C-7.wav,7,47,Sound of airplane,0.2616921067237854,7,insects
+5-204114-A-29.wav,29,2,Sound of pig,0.3843061327934265,29,drinking sipping
+5-205898-A-40.wav,40,47,Sound of airplane,0.4235451817512512,40,helicopter
+5-207811-B-35.wav,35,47,Sound of airplane,0.30032214522361755,35,washing machine
+5-207836-A-29.wav,29,0,Sound of dog,0.4713406562805176,29,drinking sipping
+5-208624-A-38.wav,38,31,Sound of mouse click,0.4565974175930023,38,clock tick
+5-209992-A-44.wav,44,45,Sound of train,0.5664663314819336,44,engine
+5-210540-A-13.wav,13,4,Sound of frog,0.6885407567024231,13,crickets
+5-216213-A-13.wav,13,4,Sound of frog,0.5263460874557495,13,crickets
+5-217186-A-16.wav,16,47,Sound of airplane,0.3424525558948517,16,wind
+5-220955-A-40.wav,40,47,Sound of airplane,0.8214248418807983,40,helicopter
+5-233787-A-7.wav,7,1,Sound of rooster,0.22507929801940918,7,insects
+5-238021-A-35.wav,35,47,Sound of airplane,0.3759361505508423,35,washing machine
+5-244315-A-6.wav,6,1,Sound of rooster,0.5114840269088745,6,hen
+5-244315-B-6.wav,6,1,Sound of rooster,0.6432575583457947,6,hen
+5-244315-C-6.wav,6,1,Sound of rooster,0.6409634351730347,6,hen
+5-250753-A-34.wav,34,39,Sound of glass breaking,0.44159799814224243,34,can opening
+5-260875-A-35.wav,35,40,Sound of helicopter,0.4161566197872162,35,washing machine
+5-263775-B-26.wav,26,21,Sound of sneezing,0.780272901058197,26,laughing
+5-263831-A-6.wav,6,1,Sound of rooster,0.597369372844696,6,hen
+5-263831-B-6.wav,6,1,Sound of rooster,0.7567322254180908,6,hen
