@@ -1,0 +1,63 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/D>>}
+\@writefile{toc}{\contentsline {section}{\numberline {1}引言}{3}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}数据集与实验环境}{3}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}ESC-50 数据集概述}{3}{subsection.2.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces ESC-50 数据集统计信息}}{3}{table.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:dataset_stats}{{1}{3}{ESC-50 数据集统计信息}{table.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}数据划分与预处理}{3}{subsection.2.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces ESC-50 类别分布}}{4}{table.caption.3}\protected@file@percent }
+\newlabel{tab:categories}{{2}{4}{ESC-50 类别分布}{table.caption.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}核心与基础：DSP算法实现及其物理意义}{4}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}快速傅里叶变换 (FFT)}{4}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}短时傅里叶变换 (STFT)}{5}{subsection.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces 自定义STFT频谱图可视化（示例：Fireworks）}}{5}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:viz_stft}{{1}{5}{自定义STFT频谱图可视化（示例：Fireworks）}{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}梅尔频率倒谱系数 (MFCC)}{5}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Log-Mel 频谱图}{6}{subsubsection.3.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces 自定义Log-Mel频谱图可视化（示例：Fireworks，40 Mels）}}{6}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:viz_logmel}{{2}{6}{自定义Log-Mel频谱图可视化（示例：Fireworks，40 Mels）}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}倒谱系数 (MFCC)}{6}{subsubsection.3.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces 自定义MFCC系数可视化（示例：Fireworks，13系数）}}{7}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:viz_mfcc}{{3}{7}{自定义MFCC系数可视化（示例：Fireworks，13系数）}{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}任务一：基于MFCC的声音检索系统}{7}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}系统设计}{7}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}实验结果：帧长与帧移的影响}{7}{subsection.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces MFCC检索 Top-10 精度 (Frame Length vs Hop Length)}}{7}{table.caption.7}\protected@file@percent }
+\newlabel{tab:retrieval_top10}{{3}{7}{MFCC检索 Top-10 精度 (Frame Length vs Hop Length)}{table.caption.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces MFCC检索 Top-20 精度 (Frame Length vs Hop Length)}}{8}{table.caption.8}\protected@file@percent }
+\newlabel{tab:retrieval_top20}{{4}{8}{MFCC检索 Top-20 精度 (Frame Length vs Hop Length)}{table.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}任务二：基于CNN的分类系统}{8}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}模型架构：ResNet-Audio}{8}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}训练策略}{8}{subsection.5.2}\protected@file@percent }
+\citation{kong2020panns}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces ResNet-Audio 模型架构}}{9}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:cnn_arch}{{4}{9}{ResNet-Audio 模型架构}{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}实验结果与分析}{9}{subsection.5.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces CNN分类测试准确率 (Frame Length vs Hop Length)}}{9}{table.caption.10}\protected@file@percent }
+\newlabel{tab:classification_acc}{{5}{9}{CNN分类测试准确率 (Frame Length vs Hop Length)}{table.caption.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}大模型时代的音频理解}{9}{section.6}\protected@file@percent }
+\citation{gong2021ast}
+\citation{wu2024clap}
+\citation{gemini3flash}
+\citation{piczak2015esc}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces CNN训练过程曲线（训练集Acc > 90\%，验证集Acc停滞在75\%，显示过拟合）}}{10}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:cnn_loss}{{5}{10}{CNN训练过程曲线（训练集Acc > 90\%，验证集Acc停滞在75\%，显示过拟合）}{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}模型介绍}{10}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}对比实验结果}{10}{subsection.6.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces 不同模型性能对比总表}}{10}{table.caption.12}\protected@file@percent }
+\newlabel{tab:models_comparison}{{6}{10}{不同模型性能对比总表}{table.caption.12}{}}
+\bibstyle{plain}
+\bibdata{ref}
+\bibcite{gemini3flash}{1}
+\@writefile{toc}{\contentsline {section}{\numberline {7}总结与思考}{11}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}不变的数学基石}{11}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}演进的特征范式}{11}{subsection.7.2}\protected@file@percent }
+\bibcite{gong2021ast}{2}
+\bibcite{kong2020panns}{3}
+\bibcite{piczak2015esc}{4}
+\bibcite{wu2024clap}{5}
+\gdef \@abspage@last{12}

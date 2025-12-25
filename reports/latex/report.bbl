@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+
+\bibitem{gemini3flash}
+Google DeepMind.
+\newblock Gemini 3 flash.
+\newblock \url{https://deepmind.google/models/gemini/flash/}, 2025.
+\newblock Accessed: 2025-12-25.
+
+\bibitem{gong2021ast}
+Yuan Gong, Yu-An Chung, and James Glass.
+\newblock Ast: Audio spectrogram transformer, 2021.
+
+\bibitem{kong2020panns}
+Qiuqiang Kong, Yin Cao, Turab Iqbal, Yuxuan Wang, Wenwu Wang, and Mark~D.
+  Plumbley.
+\newblock Panns: Large-scale pretrained audio neural networks for audio pattern
+  recognition, 2020.
+
+\bibitem{piczak2015esc}
+Karol~J. Piczak.
+\newblock {ESC}: {Dataset} for {Environmental Sound Classification}.
+\newblock In {\em Proceedings of the 23rd ACM international conference on
+  Multimedia}, pages 1015--1018, 2015.
+
+\bibitem{wu2024clap}
+Yusong Wu, Ke~Chen, Tianyu Zhang, Yuchen Hui, Marianna Nezhurina, Taylor
+  Berg-Kirkpatrick, and Shlomo Dubnov.
+\newblock Large-scale contrastive language-audio pretraining with feature
+  fusion and keyword-to-caption augmentation, 2024.
+
+\end{thebibliography}
