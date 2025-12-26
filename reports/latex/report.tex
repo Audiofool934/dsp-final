@@ -349,13 +349,13 @@ c[k] = 2 \sum_{n=0}^{N-1} x[n] \cos\left[ \frac{\pi}{N} \left(n+\frac{1}{2}\righ
 \toprule
 模型 & 方法 & 预训练数据 & 准确率 \\
 \midrule
-\textbf{ResNet (Ours)} & Supervised (Scratch) & None (仅ESC-50) & 75.00\% \\
-Gemini Flash & Zero-shot LLM & Multimodal (Web) & 78.00\% \\
-\textbf{Human Accuracy} & \textbf{Crowdsourcing} & \textbf{Biological Evolution} & \textbf{81.30\%} \cite{piczak2015esc} \\
+\textbf{ResNet (Ours)} & Supervised (Scratch) & ESC-50(1.6K) & 75.00\% \\
+Gemini Flash & Zero-shot LLM & - & 78.00\% \\
+\textbf{Human Accuracy} & \textbf{Crowdsourcing} & \textbf{-} & \textbf{81.30\%} \cite{piczak2015esc} \\
 PANNs & Transfer Learning & AudioSet (2M) & 90.50\% \\
-CLAP (Zero-shot) & Zero-shot & LAION-Audio (630K) & 91.50\% \\
+CLAP (Zero-shot) & Zero-shot & Audio-Text (2.5M) & 91.50\% \\
 AST & Transfer Learning & AudioSet (2M) & 95.00\% \\
-\textbf{CLAP (Transfer)} & \textbf{Transfer Learning} & \textbf{LAION-Audio (630K)} & \textbf{97.25\%} \\
+\textbf{CLAP (Transfer)} & \textbf{Transfer Learning} & \textbf{Audio-Text (2.5M)} & \textbf{97.25\%} \\
 \bottomrule
 \end{tabular}
 \end{table}

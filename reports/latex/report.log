@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.9)  25 DEC 2025 23:24
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.9)  26 DEC 2025 13:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -741,33 +741,202 @@ File: ../../outputs/results/run_20251221_003516/plots/cnn_history.png Graphic fi
 
 
 [9]
+./report.tex:354: Missing } inserted.
+<inserted text> 
+                }
+l.354 ...y} & \textbf{Crowdsourcing} & \textbf{\\}
+                                                   & \textbf{81.30\%} \cite{...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-[10] (./report.bbl
+./report.tex:354: Misplaced alignment tab character &.
+l.354 ... & \textbf{Crowdsourcing} & \textbf{\\} &
+                                                   \textbf{81.30\%} \cite{pi...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-[11])
+./report.tex:355: Misplaced \cr.
+\reserved@c ->\ifnum 0=`{}\fi \cr 
+                                  
+l.355 P
+       ANNs & Transfer Learning & AudioSet (2M) & 90.50\% \\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-[12] (./report.aux)
- ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2022/08/05>
- ***********
+./report.tex:355: Misplaced alignment tab character &.
+l.355 PANNs &
+              Transfer Learning & AudioSet (2M) & 90.50\% \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
+./report.tex:355: Misplaced alignment tab character &.
+l.355 PANNs & Transfer Learning &
+                                  AudioSet (2M) & 90.50\% \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+./report.tex:355: Misplaced alignment tab character &.
+l.355 PANNs & Transfer Learning & AudioSet (2M) &
+                                                  90.50\% \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: B4A98BFC3BE8A8DEFF3EAAADFCC94B28;3046
-(rerunfilecheck)             After:  4AF33FF69B52E2E0D272AFE07796F0C2;2921.
- ) 
-Here is how much of TeX's memory you used:
- 19518 strings out of 473832
- 416392 string characters out of 5729481
- 826926 words of memory out of 5000000
- 42290 multiletter control sequences out of 15000+600000
- 568395 words of font info for 107 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 93i,10n,114p,449b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
+./report.tex:356: Misplaced \cr.
+\reserved@c ->\ifnum 0=`{}\fi \cr 
+                                  
+l.356 C
+       LAP (Zero-shot) & Zero-shot & LAION-Audio (630K) & 91.50\% \\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-Output written on report.pdf (12 pages).
+./report.tex:356: Misplaced alignment tab character &.
+l.356 CLAP (Zero-shot) &
+                         Zero-shot & LAION-Audio (630K) & 91.50\% \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./report.tex:356: Misplaced alignment tab character &.
+l.356 CLAP (Zero-shot) & Zero-shot &
+                                     LAION-Audio (630K) & 91.50\% \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./report.tex:356: Misplaced alignment tab character &.
+l.356 ...-shot) & Zero-shot & LAION-Audio (630K) &
+                                                   91.50\% \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./report.tex:357: Misplaced \cr.
+\reserved@c ->\ifnum 0=`{}\fi \cr 
+                                  
+l.357 A
+       ST & Transfer Learning & AudioSet (2M) & 95.00\% \\
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./report.tex:357: Misplaced alignment tab character &.
+l.357 AST &
+            Transfer Learning & AudioSet (2M) & 95.00\% \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./report.tex:357: Misplaced alignment tab character &.
+l.357 AST & Transfer Learning &
+                                AudioSet (2M) & 95.00\% \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./report.tex:357: Misplaced alignment tab character &.
+l.357 AST & Transfer Learning & AudioSet (2M) &
+                                                95.00\% \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./report.tex:358: Misplaced \cr.
+\reserved@c ->\ifnum 0=`{}\fi \cr 
+                                  
+l.358 \textbf
+             {CLAP (Transfer)} & \textbf{Transfer Learning} & \textbf{LAION-...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./report.tex:358: Misplaced alignment tab character &.
+l.358 \textbf{CLAP (Transfer)} &
+                                 \textbf{Transfer Learning} & \textbf{LAION-...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./report.tex:358: Misplaced alignment tab character &.
+l.358 ...Transfer)} & \textbf{Transfer Learning} &
+                                                   \textbf{LAION-Audio (630K...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./report.tex:358: Misplaced alignment tab character &.
+l.358 ...Learning} & \textbf{LAION-Audio (630K)} &
+                                                   \textbf{97.25\%} \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./report.tex:359: Misplaced \cr.
+\reserved@c ->\ifnum 0=`{}\fi \cr 
+                                  
+l.359 \bottomrule
+                 
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./report.tex:359: Misplaced \noalign.
+\bottomrule ->\noalign 
+ 
